@@ -58,11 +58,31 @@ class PensumHandler:
 
         except Exception as e:
             logging.error(f"Error : {e}")
-
-    def mark_completed(self, code):      
+    
+    def get_code(self, course: str):
         try:
+            query = "SELECT code FROM courses WHERE name LIKE %s"
+            param = f"%{course}%"
+            self.cursor.execute(query, (param,))
+            result = self.cursor.fetchall()
+
+            if result:
+                logging.info(f"Results found for '{course}': {result}")
+            else:
+                logging.warning(f"No course found matching: {course}")
+
+            return result
+
+        except Exception as e:
+            logging.error(f"Error in get_code: {e}")
+            return None
+
+    def mark_completed(self, code, month : str , score : int):      
+        try:
+            self.add_month(code , month)
+            self.add_score(code, score)
             query = "UPDATE courses SET completed = 1 WHERE code = %s"
-            self.cursor.execute(query, (code))  # pass values as tuple
+            self.cursor.execute(query, (code,))  # pass values as tuple
             self.conn.commit()
             logging.info(f"{code} has been completed!!")
 
@@ -80,12 +100,25 @@ class PensumHandler:
             logging.error(f"Error : {e}")
 
     def completed_summary(self):
+
+        today = datetime.today()
+        target_date_str = "2028-03-04"
+        target_date = datetime.strptime(target_date_str, "%Y-%m-%d")
+        difference = target_date - today
+        difference = difference.days
+        years = difference // 365.25
+        rem_dy = difference % 365.25
+        months = rem_dy // 30.44
+        rem_d = rem_dy % 30.44
+        rem_d = round(rem_d)
+
         self.cursor.execute(
             """
             SELECT 
                 COUNT(*) AS total,
                 SUM(completed = 1) AS completed,
-                SUM(completed = 0) AS missing
+                SUM(completed = 0) AS missing,
+                AVG(score) AS average
             FROM courses;
             """
         )
@@ -93,7 +126,9 @@ class PensumHandler:
         summary = {
             "total": int(result[0]),
             "completed": int(result[1]),
-            "missing": int(result[2])
+            "missing": int(result[2]),
+            "avg" : float(result[3]),
+            "remaining" : f"📅Uni Remaining days : {round(years)} Year(s), {round(months)} Month(s) & {rem_d} day(s)"
         }
 
         # Average
@@ -106,13 +141,19 @@ class PensumHandler:
         target_date_str = "2028-03-04"
         target_date = datetime.strptime(target_date_str, "%Y-%m-%d")
         difference = target_date - today
+        difference = difference.days
+        years = difference // 365.25
+        rem_dy = difference % 365.25
+        months = rem_dy // 30.44
+        rem_d = rem_dy % 30.44
+        rem_d = round(rem_d) 
         logging.info(f"📘 Pensum Summary ({today}):\n"
                     f"──────────────────────────────\n"
                     f"🟢 Total Subjects: {summary['total']}\n"
                     f"✅ Completed: {summary['completed']}\n"
                     f"❌ Missing: {summary['missing']}\n"
                     f"📊 Average Score: {average:.2f}\n"
-                    f"📅Days until March 4, 2028: {difference.days} days")
+                    f"📅Uni Remaining days : {round(years)} Year(s), {round(months)} Month(s) & {rem_d} day(s)")
         
         return summary
 
