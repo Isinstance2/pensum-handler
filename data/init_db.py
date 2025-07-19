@@ -7,60 +7,90 @@ import logging
 import unicodedata
 
 
+import logging
+import sys
+import os
 
+log_path = os.path.join(os.path.dirname(__file__), "PensumLoader.log")
 
+# Prevent duplicate handlers if script runs multiple times
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
 
-# Define el formato con timestamp
-log_format = "%(asctime)s - %(levelname)s - %(message)s"
+if not logger.hasHandlers():
+    formatter = logging.Formatter(
+        "%(asctime)s - %(levelname)s - %(message)s"
+    )
 
-# Configura el archivo de log con formato
-logging.basicConfig(
-    filename="PensumLoader.log",
-    level=logging.INFO,
-    format=log_format,  # <-- Añade esta línea
-    datefmt="%Y-%m-%d %H:%M:%S"
-)
+    file_handler = logging.FileHandler(log_path)
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
-# Handler para la consola
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.INFO)
+    console_handler = logging.StreamHandler(sys.__stdout__)
+    console_handler.setLevel(logging.DEBUG)
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
 
-# Usa el mismo formato con timestamp
-formatter = logging.Formatter(log_format, datefmt="%Y-%m-%d %H:%M:%S")
-console_handler.setFormatter(formatter)
-
-# Añade el handler de consola al logger raíz
-logging.getLogger().addHandler(console_handler)
+# Prueba forzada
+logger.debug("🔥 Logging initialized correctamente")
 
 
 
 class PensumLoaderUnicaribe():
     def __init__(self, file_name):
-        self.data_path = os.path.join(r'/home/oa/projects/uni/data', f"{file_name}")
         self.data_folder = r'/home/oa/projects/uni/data'
+        self.data_path = os.path.join(self.data_folder, file_name)
         self.original_name = file_name
-        self.updated_path = os.path.join(self.data_folder, f"{file_name}_updated.csv")
-
-        if not os.path.exists(self.data_path):
-            raise FileNotFoundError(f"No se encontró el archivo: {self.data_path}")
-
         
-        try:
-            self.df = pd.read_csv(self.updated_path)
-            self.df = self.format_data(self.df)
-            logging.info(f"Loaded updated data from: {self.updated_path}")
+        # Determine if file_name is PDF or CSV
+        ext = os.path.splitext(file_name)[1].lower()
         
-        except Exception as e:
-            logging.error(f"Failed to load updated data, falling back to PDF: {e}")
-            self.df = self.load_from_pdf_and_format()
-    
+        if ext == '.pdf':
+            base_name = os.path.splitext(file_name)[0]
+            self.updated_path = os.path.join(self.data_folder, f"{base_name}_updated.csv")
+
+            if not os.path.exists(self.data_path):
+                raise FileNotFoundError(f"No se encontró el archivo: {self.data_path}")
+
+            if os.path.exists(self.updated_path):
+                try:
+                    self.df = pd.read_csv(self.updated_path)
+                    self.df = self.format_data(self.df)
+                    logging.info(f"Loaded updated data from: {self.updated_path}")
+                except Exception as e:
+                    logging.error(f"Failed to load updated data, falling back to PDF: {e}")
+                    self.df = self.load_from_pdf_and_format()
+            else:
+                logging.info(f"Updated CSV not found. Loading from PDF: {self.data_path}")
+                self.df = self.load_from_pdf_and_format()
+
+        elif ext == '.csv':
+            # If file_name is CSV, just load it directly, no fallback
+            if not os.path.exists(self.data_path):
+                raise FileNotFoundError(f"No se encontró el archivo CSV: {self.data_path}")
+
+            try:
+                self.df = pd.read_csv(self.data_path)
+                logging.info(f"Loaded data directly from CSV: {self.data_path}")
+            except Exception as e:
+                logging.error(f"Failed to load CSV file: {e}")
+                raise e
+
+        else:
+            raise ValueError("Archivo no soportado. Solo .pdf o .csv")
             
             
+    def save(self) -> None:
+        # Eliminamos columnas temporales
+        if 'asignatura_limpia' in self.df.columns:
+            self.df = self.df.drop(columns=["asignatura_limpia"])
+
+        base_name = os.path.splitext(self.original_name)[0]
+        fixed_updated_path = os.path.join(self.data_folder, f"{base_name}_updated.csv")
+        self.df.to_csv(fixed_updated_path, index=False)
+        logging.debug(f"Archivo actualizado guardado en {fixed_updated_path}")
         
-
-    def save(self):
-        self.df.to_csv(self.updated_path, index=False)
-
     def remove_accents(self,input_str):
         # Normaliza a forma decomposed (NFD), separa letras de acentos y elimina los acentos
         nfkd_form = unicodedata.normalize('NFD', input_str)
@@ -98,7 +128,7 @@ class PensumLoaderUnicaribe():
         return df
     
     def __str__(self):
-        return self.df
+        return self.df.to_string(index=False)
     
     def completed_summary(self):
         avg = self.df['nota'].mean()

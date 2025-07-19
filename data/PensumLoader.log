@@ -1,46 +1,96 @@
-2025-07-18 21:30:49 - INFO - Assigned grade 94 to subject: ADMINISTRACION I
-2025-07-18 21:32:40 - INFO - Assigned grade 94 to subject: ADMINISTRACION I
-2025-07-18 21:46:15 - WARNING - Multiple matches found for 'FISICA I': ['FISICA I', 'FISICA II']
-2025-07-18 21:46:15 - INFO - Assigned grade 91 to subject: FISICA I
-2025-07-18 21:46:15 - INFO - Assigned grade 92 to subject: ORIENTACIÓN ACADÉMICA INSTITUCIONAL
-2025-07-18 21:46:15 - INFO - Assigned grade 97 to subject: MÉTODO DEL TRABAJO ACADÉMICO
-2025-07-18 21:46:15 - INFO - Assigned grade 91 to subject: LENGUA ESPAÑOLA I
-2025-07-18 21:46:15 - INFO - Assigned grade 98 to subject: MATEMÁTICA BÁSICA I
-2025-07-18 21:46:15 - INFO - Assigned grade 98 to subject: TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN I
-2025-07-18 21:46:15 - INFO - Assigned grade 91 to subject: HISTORIA SOCIAL DOMINICANA
-2025-07-18 21:46:15 - INFO - Assigned grade 92 to subject: INGLÉS I
-2025-07-18 21:46:15 - INFO - Assigned grade 93 to subject: FILOSOFÍA
-2025-07-18 21:46:15 - INFO - Assigned grade 93 to subject: DESARROLLO SOSTENIBLE Y GESTIÓN DE RIESGOS
-2025-07-18 21:46:15 - INFO - Assigned grade 97 to subject: CIENCIA DE LOS DATOS
-2025-07-18 21:46:15 - INFO - Assigned grade 100 to subject: INTRODUCCIÓN A LA PROGRAMACIÓN
-2025-07-18 21:46:15 - INFO - Assigned grade 99 to subject: SISTEMA OPERATIVO I
-2025-07-18 21:46:15 - INFO - Assigned grade 97 to subject: REDES INFORMÁTICAS
-2025-07-18 21:46:15 - INFO - Assigned grade 94 to subject: INTRODUCCIÓN A LA INGENIERÍA
-2025-07-18 21:46:15 - INFO - Assigned grade 94 to subject: TALLER DE MECÁNICA DE HARDWARE
-2025-07-18 21:46:15 - INFO - Assigned grade 97 to subject: TALLER DE BASES DE DATOS I
-2025-07-18 21:46:15 - WARNING - Multiple matches found for 'ESTADISTICA I': ['ESTADISTICA I', 'ESTADISTICA II']
-2025-07-18 21:46:15 - INFO - Assigned grade 96 to subject: ESTADISTICA I
-2025-07-18 21:46:15 - INFO - Assigned grade 93 to subject: QUÍMICA I
-2025-07-18 21:46:15 - INFO - Assigned grade 93 to subject: ETICA EN TECNOLOGÍA
-2025-07-18 21:55:30 - WARNING - Multiple matches found for 'FISICA I': ['FISICA I', 'FISICA II']
-2025-07-18 21:55:30 - INFO - Assigned grade 91 to subject: FISICA I
-2025-07-18 21:55:30 - INFO - Assigned grade 92 to subject: ORIENTACIÓN ACADÉMICA INSTITUCIONAL
-2025-07-18 21:55:30 - INFO - Assigned grade 97 to subject: MÉTODO DEL TRABAJO ACADÉMICO
-2025-07-18 21:55:30 - INFO - Assigned grade 91 to subject: LENGUA ESPAÑOLA I
-2025-07-18 21:55:30 - INFO - Assigned grade 98 to subject: MATEMÁTICA BÁSICA I
-2025-07-18 21:55:30 - INFO - Assigned grade 98 to subject: TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN I
-2025-07-18 21:55:30 - INFO - Assigned grade 91 to subject: HISTORIA SOCIAL DOMINICANA
-2025-07-18 21:55:30 - INFO - Assigned grade 92 to subject: INGLÉS I
-2025-07-18 21:55:30 - INFO - Assigned grade 93 to subject: FILOSOFÍA
-2025-07-18 21:55:30 - INFO - Assigned grade 93 to subject: DESARROLLO SOSTENIBLE Y GESTIÓN DE RIESGOS
-2025-07-18 21:55:30 - INFO - Assigned grade 97 to subject: CIENCIA DE LOS DATOS
-2025-07-18 21:55:30 - INFO - Assigned grade 100 to subject: INTRODUCCIÓN A LA PROGRAMACIÓN
-2025-07-18 21:55:30 - INFO - Assigned grade 99 to subject: SISTEMA OPERATIVO I
-2025-07-18 21:55:30 - INFO - Assigned grade 97 to subject: REDES INFORMÁTICAS
-2025-07-18 21:55:30 - INFO - Assigned grade 94 to subject: INTRODUCCIÓN A LA INGENIERÍA
-2025-07-18 21:55:30 - INFO - Assigned grade 94 to subject: TALLER DE MECÁNICA DE HARDWARE
-2025-07-18 21:55:30 - INFO - Assigned grade 97 to subject: TALLER DE BASES DE DATOS I
-2025-07-18 21:55:30 - WARNING - Multiple matches found for 'ESTADISTICA I': ['ESTADISTICA I', 'ESTADISTICA II']
-2025-07-18 21:55:30 - INFO - Assigned grade 96 to subject: ESTADISTICA I
-2025-07-18 21:55:30 - INFO - Assigned grade 93 to subject: QUÍMICA I
-2025-07-18 21:55:30 - INFO - Assigned grade 93 to subject: ETICA EN TECNOLOGÍA
+2025-07-19 03:11:48,183 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:11:50,398 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:12:23,402 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:14:45,734 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:14:48,523 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:15:24,305 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:15:24,307 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:15:53,583 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:20:04,008 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:20:36,638 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:20:38,959 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:22:55,933 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:23:07,145 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv_updated.csv'
+2025-07-19 03:28:48,639 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:28:57,748 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:29:10,687 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:29:10,861 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:29:10,863 - INFO - ✅ Data saved to /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:29:34,506 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv_updated.csv'
+2025-07-19 03:32:03,766 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:32:08,254 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:32:18,723 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:32:18,894 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:33:29,524 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv_updated.csv'
+2025-07-19 03:43:33,683 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:43:41,703 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated_updated.csv'
+2025-07-19 03:43:54,290 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:43:59,145 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv'
+2025-07-19 03:44:16,688 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv'
+2025-07-19 03:44:16,864 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:44:26,631 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv'
+2025-07-19 03:52:01,842 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:52:11,228 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:52:43,517 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:52:55,128 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:52:55,134 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:53:18,878 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv
+2025-07-19 03:53:34,422 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:53:54,746 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 03:54:08,072 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 03:54:08,272 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:54:38,375 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 03:54:44,027 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:55:08,730 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:55:08,732 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:05:15,311 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:05:21,540 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 04:05:33,418 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 04:05:33,592 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:06:39,686 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:06:43,565 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv'
+2025-07-19 04:07:23,876 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:07:27,693 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:15:42,055 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:15:46,285 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:24:48,059 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:28:19,130 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:28:22,748 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:45:14,955 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:45:20,424 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:45:53,690 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:45:53,692 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:46:13,290 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:46:43,073 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv
+2025-07-19 04:52:14,045 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:52:32,873 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:52:37,023 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:52:51,192 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:52:51,397 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:52:51,399 - INFO - Saved updated data to: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.pdf
+2025-07-19 04:53:39,161 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 04:53:41,742 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:53:50,523 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:53:50,730 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 05:14:56,981 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:15:03,187 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:28:27,353 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:32:26,451 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:32:37,183 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:32:42,019 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:36:02,019 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:36:06,910 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:39:04,513 - ERROR - Failed to load CSV file: 'clave'
+2025-07-19 05:39:13,553 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:39:30,432 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:45:27,162 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:45:41,588 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:45:45,612 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 05:46:02,468 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 05:46:02,640 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 05:46:11,013 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:46:15,168 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:47:04,452 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:47:08,137 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:53:28,925 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-19 05:53:35,037 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv

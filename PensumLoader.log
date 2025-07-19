@@ -1,2 +1,212 @@
 2025-07-19 00:54:26 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
 2025-07-19 00:57:51 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 01:14:50 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 01:17:57 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 01:18:40 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 01:34:45 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:13:02 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:13:18 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:14:02 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:14:35 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:15:06 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:15:25 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:17:03 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:17:21 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:17:21 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:25 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:25 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:26 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:26 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:27 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:27 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:28 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:28 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:29 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:29 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:30 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:30 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:31 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:31 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:32 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:32 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:34 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:34 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:35 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:35 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:37 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:37 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:38 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:38 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:39 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:39 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:40 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:40 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:44 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:44 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:17:47 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:17:47 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:18:37 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:18:37 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:19:31 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:20:29 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:21:06 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:21:06 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:08 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:08 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:09 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:09 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:10 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:10 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:11 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:11 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:12 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:27 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:27 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:27 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:27 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:27 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:27 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:27 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:27 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:27 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:27 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:36 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:36 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:36 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:36 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:36 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:36 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:52 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:52 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:53 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:53 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:58 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:58 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:58 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:58 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:21:58 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:21:58 - ERROR - Error assigning grade: normalize() argument 2 must be str, not None
+2025-07-19 02:25:32 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:27:13 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:35:39 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:36:35 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:42:20 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:42:34 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 02:42:34 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 02:42:34 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:54:12 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:54:30 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:54:30 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 02:54:30 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:55:36 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:55:52 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:55:52 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 02:56:43 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 02:56:43 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:00:11 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:01:47 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:02:06 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:02:06 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:02:06 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv_updated.csv'
+2025-07-19 03:08:10 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:08:10,334 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:08:23 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:08:23,131 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:08:23 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:08:23,133 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:08:23 - INFO - ✅ Data saved to /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:08:23,135 - INFO - ✅ Data saved to /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:11:50,398 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:12:23,402 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:14:48,523 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:15:24,305 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:15:24,307 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:15:53,583 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:20:38,959 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv
+2025-07-19 03:23:07,145 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv_updated.csv'
+2025-07-19 03:28:57,748 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:29:10,687 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:29:10,861 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:29:10,863 - INFO - ✅ Data saved to /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:29:34,506 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv_updated.csv'
+2025-07-19 03:32:08,254 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:32:18,723 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv'
+2025-07-19 03:32:18,894 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:33:29,524 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated.csv_updated.csv'
+2025-07-19 03:43:41,703 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf_updated_updated.csv'
+2025-07-19 03:43:59,145 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv'
+2025-07-19 03:44:16,688 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv'
+2025-07-19 03:44:16,864 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:44:26,631 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv'
+2025-07-19 03:52:11,228 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:52:43,517 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:52:55,128 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:52:55,134 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:53:18,878 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv
+2025-07-19 03:53:34,422 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:53:54,746 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 03:54:08,072 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 03:54:08,272 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 03:54:44,027 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:55:08,730 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 03:55:08,732 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:05:21,540 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 04:05:33,418 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.csv'
+2025-07-19 04:05:33,592 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:06:43,565 - ERROR - Failed to load updated data, falling back to PDF: [Errno 2] No such file or directory: '/home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv'
+2025-07-19 04:07:27,693 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:15:46,285 - INFO - Loaded updated data from: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:28:22,748 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:45:20,424 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:45:53,690 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 04:45:53,692 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:46:43,073 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated_updated.csv
+2025-07-19 04:52:37,023 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:52:51,192 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:52:51,397 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 04:52:51,399 - INFO - Saved updated data to: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.pdf
+2025-07-19 04:53:41,742 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:53:50,523 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 04:53:50,730 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 05:15:03,187 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:32:42,019 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:36:06,910 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:39:04,513 - ERROR - Failed to load CSV file: 'clave'
+2025-07-19 05:39:30,432 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:45:45,612 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 05:46:02,468 - INFO - Updated CSV not found. Loading from PDF: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional.pdf
+2025-07-19 05:46:02,640 - INFO - Assigned grade 94.0 to subject: ADMINISTRACION I
+2025-07-19 05:46:15,168 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:47:08,137 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-19 05:53:35,037 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
