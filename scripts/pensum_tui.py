@@ -196,7 +196,7 @@ class EditRecordScreen(Screen):
             grade_raw = self.query_one("#grade", Input).value
 
             try:
-                subject_month = datetime.strptime(subject_month_raw, "%Y-%m")
+                subject_month = datetime.strptime(subject_month_raw, "%Y-%m").date().replace(day=1)
                 grade = float(grade_raw)
             except ValueError:
                 self.app.bell()

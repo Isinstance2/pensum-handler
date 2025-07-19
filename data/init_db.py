@@ -87,9 +87,15 @@ class PensumLoaderUnicaribe():
             self.df = self.df.drop(columns=["asignatura_limpia"])
 
         base_name = os.path.splitext(self.original_name)[0]
-        fixed_updated_path = os.path.join(self.data_folder, f"{base_name}_updated.csv")
-        self.df.to_csv(fixed_updated_path, index=False)
-        logging.debug(f"Archivo actualizado guardado en {fixed_updated_path}")
+
+        if base_name.endswith('_updated'):
+            fixed_updated_path = os.path.join(self.data_folder, f"{base_name}.csv")
+            self.df.to_csv(fixed_updated_path, index=False)
+            logging.debug(f"Archivo actualizado guardado en {fixed_updated_path}")
+        else:
+            updated_path = os.path.join(self.data_folder, f"{base_name}_updated.csv")
+            self.df.to_csv(updated_path, index=False)
+            logging.debug(f"Archivo actualizado guardado en {updated_path}")
         
     def remove_accents(self,input_str):
         # Normaliza a forma decomposed (NFD), separa letras de acentos y elimina los acentos
