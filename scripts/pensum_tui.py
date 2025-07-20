@@ -1,4 +1,3 @@
-# pensum_tui.py
 from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer, Button, Static
 from textual.widgets import Input
@@ -70,6 +69,38 @@ class PensumApp(App):
         background: $primary;
         color: $text;
     }
+
+    #course_list {
+    width: 5fr;
+    height: 100%;
+    overflow: auto;
+    padding: 1;
+    border: round $primary;
+    }
+    .course-box {
+    border: round white;
+    padding: 1 2;
+    margin: 1 0;
+    width: 100%;
+    height: auto;
+    content-align: left middle;
+    background: transparent;
+    }
+    Static {
+        border: none;
+        padding: 0 1;
+        content-align: left middle;
+    }
+    .course-box.completed {
+    border: round green;
+    color: green;
+    background: transparent;
+    }
+    .course-box.pending {
+    border: round yellow;
+    background: transparent;
+    color: yellow;
+    } 
     """
 
     def __init__(self):
@@ -94,7 +125,7 @@ class FileSelectionScreen(Screen):
 
     def compose(self) -> ComposeResult:
         yield Header()
-        yield Static("Selecciona el archivo pdf del pensum (escribe el numero):")
+        yield Static("Selecciona el archivo pdf o csv del pensum (escribe el numero):")
         self.files = [f for f in os.listdir(data_folder) if f.endswith((".pdf", ".csv"))]
 
         for idx, fname in enumerate(self.files):
@@ -132,7 +163,7 @@ class FileSelectionScreen(Screen):
                 f"📅 Time Left: {years} yrs, {months} mo, {days} days"
             )
 
-            file_output = str(df)
+            file_output = df
 
             self.app.push_screen(UnicaribeScreen(file_output, summary_text, file_to_load))
 
@@ -154,14 +185,34 @@ class UnicaribeScreen(Screen):
         yield Header()
 
         with Horizontal():
-            yield Static(self.content, id="course_list")
+            # Course list display
+            with Vertical(id="course_list"):
+                for _, row in self.content.iterrows():
+                    # Format subject box
+                    box_content = (
+                        f"[b]Asignatura:[/b] {row['asignatura']}\n"
+                        f"[b]Clave:[/b] {row['clave']}\n"
+                        f"[b]Créditos:[/b] {row['credito']}\n"
+                        f"[b]Pre-req:[/b] {row['pre_req']}\n"
+                        f"[b]Mes cursado:[/b] {str(row['mes_cursado'])[:10]}\n"
+                        f"[b]Nota:[/b] {row['nota']}\n"
+                        f"[b]Estado:[/b] {'Completado' if row['completo'] else 'Pendiente'}"
+                    )
 
+                    # Apply style via class
+                    status_class = "completed" if row["completo"] else "pending"
+
+                    # Create styled Static widget
+                    yield Static(box_content, classes=f"course-box {status_class}")
+
+            # Summary + Button
             with Vertical(id="summary_container"):
                 yield Static(self.summary_text, id="summary_box")
-                yield Button("✏️ Edit Record", id="edit_record", classes="edit-btn")
+                yield Button("✏️ Editar registro", id="edit_record", classes="edit-btn")
 
-        yield Button("🔙 Back", id="back")
+        yield Button("🔙 Volver", id="back")
         yield Footer()
+
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "edit_record":
@@ -228,7 +279,7 @@ class EditRecordScreen(Screen):
                     f"📅 Time Left: {years} yrs, {months} mo, {days} days"
                 )
 
-                self.app.push_screen(UnicaribeScreen(str(df), summary_text, self.file_name))
+                self.app.push_screen(UnicaribeScreen(df, summary_text, self.file_name))
             else:
                 self.app.bell()
 
@@ -251,3 +302,4 @@ class EditRecordScreen(Screen):
 
 if __name__ == "__main__":
     PensumApp().run()
+
