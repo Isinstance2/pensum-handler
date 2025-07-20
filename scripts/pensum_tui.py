@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static
+from textual.widgets import Header, Footer, Button, Static, DataTable
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal
 from textual.screen import Screen
@@ -8,6 +8,7 @@ from datetime import datetime
 import os
 import sys
 import logging
+from rich.text import Text
 
 log = logging.getLogger()
 log.setLevel(logging.INFO)
@@ -165,6 +166,12 @@ class PensumApp(App):
         background: transparent;
     }
 
+    DataTable {
+    background: transparent;
+    color: yellow;
+    border: none;
+    }
+
     """
 
 
@@ -255,24 +262,30 @@ class UnicaribeScreen(Screen):
         with Horizontal():
             # Course list display
             with Vertical(id="course_list"):
+                table = DataTable(zebra_stripes=False)
+                table.add_columns(
+                    "Asignatura", "Clave", "Créditos", "Pre-req", "Mes cursado", "Nota", "Estado"
+                )
+
                 for _, row in self.content.iterrows():
-                    # Format subject box
-                    box_content = (
-                        f"[b]Asignatura:[/b] {row['asignatura']}\n"
-                        f"[b]Clave:[/b] {row['clave']}\n"
-                        f"[b]Créditos:[/b] {row['credito']}\n"
-                        f"[b]Pre-req:[/b] {row['pre_req']}\n"
-                        f"[b]Mes cursado:[/b] {str(row['mes_cursado'])[:10]}\n"
-                        f"[b]Nota:[/b] {row['nota']}\n"
-                        f"[b]Estado:[/b] {'Completado' if row['completo'] else 'Pendiente'}"
-                    )
+                    is_complete = row["completo"]
 
-                    # Apply style via class
-                    status_class = "completed" if row["completo"] else "pending"
+                    style = "bold green" if is_complete else "bold white"
 
-                    # Create styled Static widget
-                    yield Static(box_content, classes=f"course-box {status_class}")
+                    # Ensure no background override
+                    cells = [
+                        Text(str(row["asignatura"]), style=style),
+                        Text(str(row["clave"]), style=style),
+                        Text(str(row["credito"]), style=style),
+                        Text(str(row["pre_req"]), style=style),
+                        Text(str(row["mes_cursado"])[:10], style=style),
+                        Text(str(row["nota"]), style=style),
+                        Text("Completado" if is_complete else "Pendiente", style=style),
+                    ]
 
+                    table.add_row(*cells)
+
+                yield table
             # Summary + Button
             with Vertical(id="summary_container"):
                 yield Static(self.summary_text, id="summary_box")
