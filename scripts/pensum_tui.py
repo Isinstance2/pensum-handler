@@ -87,11 +87,11 @@ class PensumApp(App):
 
     /* Summary Panel */
     Static#summary_box {
-        width: 30;
+        width: 100%;
         padding: 1 2;
-        border: round #2563EB;
-        background: #111827;
-        color: #94A3B8;
+        border: none;
+        background: transparent;
+        
     }
 
     /* Edit Button */
@@ -170,6 +170,8 @@ class PensumApp(App):
     background: transparent;
     color: yellow;
     border: none;
+    scrollbar-background: transparent;
+    scrollbar-color: transparent;
     }
 
     """
@@ -188,12 +190,42 @@ class PensumApp(App):
             yield Static("Selecciona universidad:", classes="menu-title")
             yield Button("Unicaribe", id="unicaribe", classes="start-btn")
             yield Button("🚪 Exit", id="exit")
+            yield Input(placeholder="Fecha de termino aproximada (YYYY-MM-DD)", id="target_date", classes="course-input")
+            yield Static("Ejemplo: 2028-03-04", classes="menu-title")
+        
         yield Footer()
 
     def on_button_pressed(self, event: Button.Pressed):
         if event.button.id == "unicaribe":
+        # If target_date is not set, set it to default and show a message
+            if not hasattr(self, "target_date") or self.target_date is None:
+                self.target_date = datetime.strptime("1995-03-04", "%Y-%m-%d")
+                logging.info("No date entered, using default 1995-03-04")
+                # Optionally, show a message to the user
+                self.mount(Static("Fecha guardada ✅ (default)", classes="menu-title"))
             self.push_screen(FileSelectionScreen())
+        elif event.button.id == "exit":
+            self.exit()
 
+    def on_input_submitted(self, event: Input.Submitted):
+        if event.input.id == "target_date":
+            value = event.value.strip()
+            if not value:
+                self.target_date = datetime.strptime("1995-03-04", "%Y-%m-%d")
+                logging.info("No date entered, using default 1995-03-04")
+                target_input = self.query_one("#target_date", Input)
+                target_input.remove()
+                self.mount(Static("Fecha guardada ✅ (default)", classes="menu-title"))
+            else:
+                try:
+                    self.target_date = datetime.strptime(value, "%Y-%m-%d")
+                    logging.info(f"Target date set to: {self.target_date}")
+                    target_input = self.query_one("#target_date", Input)
+                    target_input.remove()
+                    self.mount(Static("Fecha guardada ✅", classes="menu-title"))
+                except ValueError:
+                    logging.error("Invalid date format. Please use YYYY-MM-DD.")
+                    event.input.placeholder = "❌ Formato inválido. Usa YYYY-MM-DD"
 
 class FileSelectionScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
@@ -222,19 +254,28 @@ class FileSelectionScreen(Screen):
             summary = loader.completed_summary()
 
             today = datetime.today()
-            target_date = datetime.strptime("2028-03-04", "%Y-%m-%d")
+            target_date = self.app.target_date if hasattr(self.app, 'target_date') else datetime.strptime("2028-03-04", "%Y-%m-%d")
+            if not target_date:
+                target_date = datetime.strptime("1995-03-04", "%Y-%m-%d")
             delta = target_date - today
             years = delta.days // 365
             months = (delta.days % 365) // 30
             days = (delta.days % 365) % 30
 
+            if summary['avg'] >= 90:
+                 avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🟢"
+            elif 75 <= summary['avg'] < 90:
+                avg_grade =f"📊 Avg Grade: {summary['avg']:.2f} 🟡"
+            else:
+                avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🔴"
+
             summary_text = (
-                f"📘 PENSUM SUMMARY\n"
-                f"─────────────────────\n"
+                f"       📘PENSUM SUMMARY        \n"
+                f"────────────────────────────────\n"
                 f"🟢 Total Subjects: {summary['total']}\n"
                 f"✅ Completed: {summary['completed']}\n"
                 f"❌ Missing: {summary['missing']}\n"
-                f"📊 Avg Grade: {summary['avg']:.2f}\n"
+                f"{avg_grade}\n"
                 f"📅 Time Left: {years} yrs, {months} mo, {days} days"
             )
 
@@ -289,9 +330,9 @@ class UnicaribeScreen(Screen):
             # Summary + Button
             with Vertical(id="summary_container"):
                 yield Static(self.summary_text, id="summary_box")
-                yield Button("✏️ Editar registro", id="edit_record", classes="edit-btn")
+                yield Button("✏️ Editar registro", id="edit_record", classes="start-btn")
 
-        yield Button("🔙 Volver", id="back")
+        yield Button("Volver", id="back")
         yield Footer()
 
 
@@ -350,19 +391,26 @@ class EditRecordScreen(Screen):
                 months = (delta.days % 365) // 30
                 days = (delta.days % 365) % 30
 
-                summary_text = (
-                    f"📘 PENSUM SUMMARY\n"
-                    f"─────────────────────\n"
-                    f"🟢 Total Subjects: {summary['total']}\n"
-                    f"✅ Completed: {summary['completed']}\n"
-                    f"❌ Missing: {summary['missing']}\n"
-                    f"📊 Avg Grade: {summary['avg']:.2f}\n"
-                    f"📅 Time Left: {years} yrs, {months} mo, {days} days"
-                )
+                if summary['avg'] >= 90:
+                    avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🟢"
+                elif 75 <= summary['avg'] < 90:
+                    avg_grade =f"📊 Avg Grade: {summary['avg']:.2f} 🟡"
+                else:
+                    avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🔴"
 
-                self.app.push_screen(UnicaribeScreen(df, summary_text, self.file_name))
-            else:
-                self.app.bell()
+            summary_text = (
+                f"       📘PENSUM SUMMARY        \n"
+                f"────────────────────────────────\n"
+                f"🟢 Total Subjects: {summary['total']}\n"
+                f"✅ Completed: {summary['completed']}\n"
+                f"❌ Missing: {summary['missing']}\n"
+                f"{avg_grade}\n"
+                f"📅 Time Left: {years} yrs, {months} mo, {days} days"
+            )
+
+            self.app.push_screen(UnicaribeScreen(df, summary_text, self.file_name))
+        else:
+            self.app.bell()
 
     def on_input_submitted(self, event: Input.Submitted) -> None:
         input_id = event.input.id
