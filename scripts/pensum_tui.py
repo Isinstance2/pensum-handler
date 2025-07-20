@@ -39,69 +39,136 @@ class PensumApp(App):
     Screen {
         align: center middle;
         background: black;
+        color: #E0E6ED;
     }
+
+    .menu-title {
+    background: transparent;
+    color: #E0E6ED;
+    border: round #10B981;
+    }
+
+    .centered-menu {
+    align: center top;
+    width: 100%;
+    align-horizontal: center;
+    }
+
+    
+    /* Base Buttons */
     Button {
-        margin: 1;
-        width: 30;
+        margin: 1 2;
+        width: 100%;
+        padding: 1 1;
+        background: transparent;
+        color: white;
+        border: none;
+        text-style: bold;
+        
     }
+
+    Button:hover {
+        background: #10B981;
+        color: #FFFFFF;
+        border: round none ;
+    }
+
+    /* Static Boxes */
     Static {
-        color: yellow;
-        background: black;
-        border: round white;
+        color: #E0E6ED;
+        background: #1E222A;
+        border: round #1F2937;
         padding: 1 2;
-        width: 80%;
+        width: 100%;
         height: auto;
+        text-style: bold;
     }
+
+    /* Summary Panel */
     Static#summary_box {
         width: 30;
         padding: 1 2;
-        border: black;
-        color: yellow;
-    }
-    .edit-btn {
-        background: $boost;
-        color: $text;
-        padding: 1 2;
-        border: round yellow;
-        text-style: bold;
-    }
-    .edit-btn:hover {
-        background: $primary;
-        color: $text;
+        border: round #2563EB;
+        background: #111827;
+        color: #94A3B8;
     }
 
-    #course_list {
-    width: 5fr;
-    height: 100%;
-    overflow: auto;
-    padding: 1;
-    border: round $primary;
+    /* Edit Button */
+    .edit-btn {
+        background: #1E293B;
+        width: 85%;
+        color: #E0E6ED;
+        padding: 1 2;
+        border: round #3B82F6;
+        text-style: bold;
+        margin: 1;
     }
+
+    .edit-btn:hover {
+        background: #2563EB;
+        color: #FFFFFF;
+        border: round #93C5FD;
+    }
+
+    /* Save Button */
+    .save-btn {
+        background: #1E293B;
+        width: 100%;
+        color: #E0E6ED;
+        padding: 1 2;
+        border: round #3B82F6;
+        text-style: bold;
+        margin: 1;
+    }
+
+    /* Scrollable Course List */
+    #course_list {
+        width: 4fr;
+        height: 100%;
+        overflow: auto;
+        padding: 1;
+        border: none;
+        background: transparent;
+    }
+
+    .file-item {
+        padding: 1 1;
+        background: transparent;
+        color: white;
+        border: none;
+    }  
+
+    /* Course Boxes */
     .course-box {
-    border: round white;
-    padding: 1 2;
-    margin: 1 0;
+    border: none; /* or use a subtle border if you prefer */
+    padding: 0 1;
+    margin: 1;
     width: 100%;
     height: auto;
     content-align: left middle;
     background: transparent;
-    }
-    Static {
-        border: none;
-        padding: 0 1;
-        content-align: left middle;
-    }
+    color: #E0E6ED;  /* Light floating text */
+    text-style: bold;
+}
+
+    /* Completed Courses */
     .course-box.completed {
-    border: round green;
-    color: green;
-    background: transparent;
+        border: none;
+        color: #10B981; /* Mint green floating text */
+        background: transparent;
     }
+
+    /* Pending Courses */
     .course-box.pending {
-    border: round yellow;
-    background: transparent;
-    color: yellow;
-    } 
+        border: none;
+        color: #8B5CF6; /* Lavender/purple floating text */
+        background: transparent;
+    }
+
     """
+
+
+
 
     def __init__(self):
         super().__init__()
@@ -109,9 +176,10 @@ class PensumApp(App):
 
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
-        with Vertical():
-            yield Static("Selecciona universidad:")
-            yield Button("Unicaribe", id="unicaribe")
+        with Vertical(classes="centered-menu"):
+            # Main menu
+            yield Static("Selecciona universidad:", classes="menu-title")
+            yield Button("Unicaribe", id="unicaribe", classes="start-btn")
             yield Button("🚪 Exit", id="exit")
         yield Footer()
 
@@ -125,13 +193,13 @@ class FileSelectionScreen(Screen):
 
     def compose(self) -> ComposeResult:
         yield Header()
-        yield Static("Selecciona el archivo pdf o csv del pensum (escribe el numero):")
+        yield Static("/data:", classes="menu-title")
         self.files = [f for f in os.listdir(data_folder) if f.endswith((".pdf", ".csv"))]
 
         for idx, fname in enumerate(self.files):
-            yield Static(f"[{idx}] {fname}")
+            yield Static(f"[{idx}] {fname}", classes="file-item")
 
-        yield Input(placeholder="numero del archivo", id="file_number")
+        yield Input(placeholder="numero del archivo", id="file_number", classes="course-input")
         yield Footer()
 
     def on_input_submitted(self, event: Input.Submitted) -> None:
@@ -237,7 +305,7 @@ class EditRecordScreen(Screen):
             yield Input(placeholder="Nombre de asignatura:", id="subject_name")
             yield Input(placeholder="Mes cursado (YYYY-MM):", id="subject_month")
             yield Input(placeholder="Calificación:", id="grade")
-            yield Button("💾 Guardar Registro", id="save_record", classes="edit-btn")
+            yield Button("💾 Guardar Registro", id="save_record", classes="save-btn")
         yield Footer()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
