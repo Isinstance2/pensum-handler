@@ -402,3 +402,339 @@
 2025-07-22 16:24:17,604 - INFO - Average grade calculated: 📊 Avg Grade: 93.20 🟢
 2025-07-22 16:24:17,605 - INFO - Summary box setup completed.
 2025-07-22 16:24:17,605 - INFO - Summary box setup completed.
+2025-07-22 16:57:28,198 - INFO - No date entered, using default 1995-03-04
+2025-07-22 16:57:28,198 - INFO - No date entered, using default 1995-03-04
+2025-07-22 16:57:29,672 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 16:57:29,672 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 16:57:29,677 - INFO - Average grade calculated: 📊 Avg Grade: 93.20 🟢
+2025-07-22 16:57:29,677 - INFO - Average grade calculated: 📊 Avg Grade: 93.20 🟢
+2025-07-22 16:57:29,678 - INFO - Summary box setup completed.
+2025-07-22 16:57:29,678 - INFO - Summary box setup completed.
+2025-07-22 16:58:29,455 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 16:58:29,455 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 16:58:29,461 - INFO - Assigned grade 91.0 to subject: LENGUA ESPAÑOLA I
+2025-07-22 16:58:29,461 - INFO - Assigned grade 91.0 to subject: LENGUA ESPAÑOLA I
+2025-07-22 16:58:29,469 - INFO - Average grade calculated: 📊 Avg Grade: 92.83 🟢
+2025-07-22 16:58:29,469 - INFO - Average grade calculated: 📊 Avg Grade: 92.83 🟢
+2025-07-22 16:58:29,469 - INFO - Summary box setup completed.
+2025-07-22 16:58:29,469 - INFO - Summary box setup completed.
+2025-07-22 16:59:09,415 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 16:59:09,415 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 16:59:09,417 - INFO - Assigned grade 98.0 to subject: TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN I
+2025-07-22 16:59:09,417 - INFO - Assigned grade 98.0 to subject: TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN I
+2025-07-22 16:59:09,419 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 16:59:09,419 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 16:59:09,419 - INFO - Summary box setup completed.
+2025-07-22 16:59:09,419 - INFO - Summary box setup completed.
+2025-07-22 17:01:56,929 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:01:56,929 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:01:58,048 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:01:58,048 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:01:58,053 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:01:58,053 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:01:58,053 - INFO - Summary box setup completed.
+2025-07-22 17:01:58,053 - INFO - Summary box setup completed.
+2025-07-22 17:02:10,722 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:10,722 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:11,856 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:11,856 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:11,861 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:11,861 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:11,862 - INFO - Summary box setup completed.
+2025-07-22 17:02:11,862 - INFO - Summary box setup completed.
+2025-07-22 17:02:25,187 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:25,187 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:26,165 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:26,165 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:26,167 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:26,167 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:26,167 - INFO - Summary box setup completed.
+2025-07-22 17:02:26,167 - INFO - Summary box setup completed.
+2025-07-22 17:02:37,311 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:37,311 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:38,295 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:38,295 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:38,296 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:38,296 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:38,296 - INFO - Summary box setup completed.
+2025-07-22 17:02:38,296 - INFO - Summary box setup completed.
+2025-07-22 17:02:54,292 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:54,292 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:02:55,293 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:55,293 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:02:55,294 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:55,294 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:02:55,295 - INFO - Summary box setup completed.
+2025-07-22 17:02:55,295 - INFO - Summary box setup completed.
+2025-07-22 17:05:44,203 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:05:44,203 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:05:45,270 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:05:45,270 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:05:45,275 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:05:45,275 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:05:45,276 - INFO - Summary box setup completed.
+2025-07-22 17:05:45,276 - INFO - Summary box setup completed.
+2025-07-22 17:05:45,286 - ERROR - Error generating grade bar: 'str' object has no attribute 'sort'
+2025-07-22 17:05:45,286 - ERROR - Error generating grade bar: 'str' object has no attribute 'sort'
+2025-07-22 17:06:45,931 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:06:45,931 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:06:47,100 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:06:47,100 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:06:47,102 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:06:47,102 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:06:47,102 - INFO - Summary box setup completed.
+2025-07-22 17:06:47,102 - INFO - Summary box setup completed.
+2025-07-22 17:06:47,109 - ERROR - Error generating grade bar: 'str' object has no attribute 'sort'
+2025-07-22 17:06:47,109 - ERROR - Error generating grade bar: 'str' object has no attribute 'sort'
+2025-07-22 17:06:57,441 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:06:57,441 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:06:58,489 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:06:58,489 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:06:58,494 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:06:58,494 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:06:58,495 - INFO - Summary box setup completed.
+2025-07-22 17:06:58,495 - INFO - Summary box setup completed.
+2025-07-22 17:08:30,911 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:08:30,911 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:08:32,043 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:08:32,043 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:08:32,048 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:08:32,048 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:08:32,049 - INFO - Summary box setup completed.
+2025-07-22 17:08:32,049 - INFO - Summary box setup completed.
+2025-07-22 17:08:32,074 - ERROR - Error generating grade bar: 'str' object has no attribute 'sort'
+2025-07-22 17:08:32,074 - ERROR - Error generating grade bar: 'str' object has no attribute 'sort'
+2025-07-22 17:08:52,540 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:08:52,540 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:08:53,419 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:08:53,419 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:08:53,424 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:08:53,424 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:08:53,425 - INFO - Summary box setup completed.
+2025-07-22 17:08:53,425 - INFO - Summary box setup completed.
+2025-07-22 17:08:53,433 - ERROR - Error generating grade bar: 'str' object has no attribute 'sorted'
+2025-07-22 17:08:53,433 - ERROR - Error generating grade bar: 'str' object has no attribute 'sorted'
+2025-07-22 17:10:15,006 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:10:15,006 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:10:16,078 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:10:16,078 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:10:16,084 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:10:16,084 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:10:16,084 - INFO - Summary box setup completed.
+2025-07-22 17:10:16,084 - INFO - Summary box setup completed.
+2025-07-22 17:10:16,092 - ERROR - Error generating grade bar: 'str' object has no attribute 'sorted'
+2025-07-22 17:10:16,092 - ERROR - Error generating grade bar: 'str' object has no attribute 'sorted'
+2025-07-22 17:10:24,641 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:10:24,641 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:10:25,710 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:10:25,710 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:10:25,715 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:10:25,715 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:10:25,716 - INFO - Summary box setup completed.
+2025-07-22 17:10:25,716 - INFO - Summary box setup completed.
+2025-07-22 17:11:32,264 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:11:32,264 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:11:33,301 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:11:33,301 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:11:33,302 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:11:33,302 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:11:33,302 - INFO - Summary box setup completed.
+2025-07-22 17:11:33,302 - INFO - Summary box setup completed.
+2025-07-22 17:12:34,910 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:12:34,910 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:12:35,922 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:12:35,922 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:12:35,927 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:12:35,927 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:12:35,928 - INFO - Summary box setup completed.
+2025-07-22 17:12:35,928 - INFO - Summary box setup completed.
+2025-07-22 17:12:35,939 - ERROR - Error generating grade bar: 'Timestamp' object has no attribute 'sort'
+2025-07-22 17:12:35,939 - ERROR - Error generating grade bar: 'Timestamp' object has no attribute 'sort'
+2025-07-22 17:13:04,599 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:13:04,599 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:13:05,475 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:13:05,475 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:13:05,480 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:13:05,480 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:13:05,481 - INFO - Summary box setup completed.
+2025-07-22 17:13:05,481 - INFO - Summary box setup completed.
+2025-07-22 17:13:05,506 - ERROR - Error generating grade bar: 'Timestamp' object is not iterable
+2025-07-22 17:13:05,506 - ERROR - Error generating grade bar: 'Timestamp' object is not iterable
+2025-07-22 17:13:35,626 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:13:35,626 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:13:36,579 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:13:36,579 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:13:36,585 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:13:36,585 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:13:36,585 - INFO - Summary box setup completed.
+2025-07-22 17:13:36,585 - INFO - Summary box setup completed.
+2025-07-22 17:13:36,593 - ERROR - Error generating grade bar: 'Timestamp' object is not iterable
+2025-07-22 17:13:36,593 - ERROR - Error generating grade bar: 'Timestamp' object is not iterable
+2025-07-22 17:17:26,177 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:17:26,177 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:17:27,130 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:17:27,130 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:17:27,135 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:17:27,135 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:17:27,136 - INFO - Summary box setup completed.
+2025-07-22 17:17:27,136 - INFO - Summary box setup completed.
+2025-07-22 17:17:52,201 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:17:52,201 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:17:53,110 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:17:53,110 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:17:53,112 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:17:53,112 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:17:53,112 - INFO - Summary box setup completed.
+2025-07-22 17:17:53,112 - INFO - Summary box setup completed.
+2025-07-22 17:18:43,032 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:18:43,032 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:18:44,040 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:18:44,040 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:18:44,041 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:18:44,041 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:18:44,041 - INFO - Summary box setup completed.
+2025-07-22 17:18:44,041 - INFO - Summary box setup completed.
+2025-07-22 17:19:06,476 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:19:06,476 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:19:08,082 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:19:08,082 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:19:08,088 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:19:08,088 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:19:08,088 - INFO - Summary box setup completed.
+2025-07-22 17:19:08,088 - INFO - Summary box setup completed.
+2025-07-22 17:19:40,007 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:19:40,007 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:19:40,845 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:19:40,845 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:19:40,850 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:19:40,850 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:19:40,851 - INFO - Summary box setup completed.
+2025-07-22 17:19:40,851 - INFO - Summary box setup completed.
+2025-07-22 17:19:58,664 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:19:58,664 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:19:59,438 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:19:59,438 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:19:59,444 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:19:59,444 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:19:59,444 - INFO - Summary box setup completed.
+2025-07-22 17:19:59,444 - INFO - Summary box setup completed.
+2025-07-22 17:29:23,480 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:29:23,480 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:29:24,670 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:29:24,670 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:29:24,675 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:29:24,675 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:29:24,675 - INFO - Summary box setup completed.
+2025-07-22 17:29:24,675 - INFO - Summary box setup completed.
+2025-07-22 17:33:06,574 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:33:06,574 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:33:07,716 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:33:07,716 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:33:07,721 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:33:07,721 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:33:07,722 - INFO - Summary box setup completed.
+2025-07-22 17:33:07,722 - INFO - Summary box setup completed.
+2025-07-22 17:34:33,302 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:34:33,302 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:34:34,390 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:34:34,390 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:34:34,395 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:34:34,395 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:34:34,396 - INFO - Summary box setup completed.
+2025-07-22 17:34:34,396 - INFO - Summary box setup completed.
+2025-07-22 17:37:29,964 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:37:29,964 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:37:30,939 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:37:30,939 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:37:30,944 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:37:30,944 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:37:30,945 - INFO - Summary box setup completed.
+2025-07-22 17:37:30,945 - INFO - Summary box setup completed.
+2025-07-22 17:38:23,239 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:38:23,239 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:38:24,349 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:38:24,349 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:38:24,354 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:38:24,354 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:38:24,355 - INFO - Summary box setup completed.
+2025-07-22 17:38:24,355 - INFO - Summary box setup completed.
+2025-07-22 17:39:07,670 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:39:07,670 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:39:08,526 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:39:08,526 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:39:08,531 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:39:08,531 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:39:08,531 - INFO - Summary box setup completed.
+2025-07-22 17:39:08,531 - INFO - Summary box setup completed.
+2025-07-22 17:40:00,612 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:40:00,612 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:40:01,423 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:40:01,423 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:40:01,428 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:40:01,428 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:40:01,429 - INFO - Summary box setup completed.
+2025-07-22 17:40:01,429 - INFO - Summary box setup completed.
+2025-07-22 17:40:51,576 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:40:51,576 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:40:52,609 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:40:52,609 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:40:52,614 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:40:52,614 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:40:52,615 - INFO - Summary box setup completed.
+2025-07-22 17:40:52,615 - INFO - Summary box setup completed.
+2025-07-22 17:42:08,905 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:42:08,905 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:42:09,907 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:42:09,907 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:42:09,912 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:42:09,912 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:42:09,912 - INFO - Summary box setup completed.
+2025-07-22 17:42:09,912 - INFO - Summary box setup completed.
+2025-07-22 17:42:32,479 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:42:32,479 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:42:33,787 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:42:33,787 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:42:33,790 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:42:33,790 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:42:33,790 - INFO - Summary box setup completed.
+2025-07-22 17:42:33,790 - INFO - Summary box setup completed.
+2025-07-22 17:43:14,749 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:43:14,749 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:43:15,860 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:43:15,860 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:43:15,866 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:43:15,866 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:43:15,867 - INFO - Summary box setup completed.
+2025-07-22 17:43:15,867 - INFO - Summary box setup completed.
+2025-07-22 17:43:46,734 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:43:46,734 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:43:47,845 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:43:47,845 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:43:47,851 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:43:47,851 - INFO - Average grade calculated: 📊 Avg Grade: 93.57 🟢
+2025-07-22 17:43:47,852 - INFO - Summary box setup completed.
+2025-07-22 17:43:47,852 - INFO - Summary box setup completed.
+2025-07-22 17:53:32,686 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:53:32,686 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:53:33,893 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:53:33,893 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:53:33,898 - INFO - Average grade calculated:  Avg Grade: 93.57 🟢
+2025-07-22 17:53:33,898 - INFO - Average grade calculated:  Avg Grade: 93.57 🟢
+2025-07-22 17:53:33,899 - INFO - Summary box setup completed.
+2025-07-22 17:53:33,899 - INFO - Summary box setup completed.
+2025-07-22 17:53:53,975 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:53:53,975 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:53:55,206 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:53:55,206 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:53:55,211 - INFO - Average grade calculated:  Avg Grade: 93.57 🟢
+2025-07-22 17:53:55,211 - INFO - Average grade calculated:  Avg Grade: 93.57 🟢
+2025-07-22 17:53:55,212 - INFO - Summary box setup completed.
+2025-07-22 17:53:55,212 - INFO - Summary box setup completed.
+2025-07-22 17:55:18,008 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:55:18,008 - INFO - No date entered, using default 1995-03-04
+2025-07-22 17:55:19,112 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:55:19,112 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 17:55:19,117 - INFO - Average grade calculated:  Avg Grade: 93.57 🟢
+2025-07-22 17:55:19,117 - INFO - Average grade calculated:  Avg Grade: 93.57 🟢
+2025-07-22 17:55:19,118 - INFO - Summary box setup completed.
+2025-07-22 17:55:19,118 - INFO - Summary box setup completed.

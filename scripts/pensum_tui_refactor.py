@@ -66,7 +66,7 @@ class PensumApp(App):
                 self.target_date = datetime.strptime("1995-03-04", "%Y-%m-%d")
                 logging.info("No date entered, using default 1995-03-04")
                 # Optionally, show a message to the user
-                self.mount(Static("Fecha guardada ✅ (default)", classes="menu-title"))
+                self.mount(Static("Fecha guardada  (default)", classes="menu-title"))
             self.push_screen(FileSelectionScreen())
         elif event.button.id == "exit":
             self.exit()
@@ -79,17 +79,17 @@ class PensumApp(App):
                 logging.info("No date entered, using default 1995-03-04")
                 target_input = self.query_one("#target_date", Input)
                 target_input.remove()
-                self.mount(Static("Fecha guardada ✅ (default)", classes="menu-title"))
+                self.mount(Static("Fecha guardada  (default)", classes="menu-title"))
             else:
                 try:
                     self.target_date = datetime.strptime(value, "%Y-%m-%d")
                     logging.info(f"Target date set to: {self.target_date}")
                     target_input = self.query_one("#target_date", Input)
                     target_input.remove()
-                    self.mount(Static("Fecha guardada ✅", classes="menu-title"))
+                    self.mount(Static("Fecha guardada ", classes="menu-title"))
                 except ValueError:
                     logging.error("Invalid date format. Please use YYYY-MM-DD.")
-                    event.input.placeholder = "❌ Formato inválido. Usa YYYY-MM-DD"
+                    event.input.placeholder = " Formato inválido. Usa YYYY-MM-DD"
 
 class FileSelectionScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]

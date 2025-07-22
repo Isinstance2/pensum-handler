@@ -437,3 +437,11 @@
 2025-07-22 05:46:51,833 - INFO - Average grade calculated: 📊 Avg Grade: 93.50 🟢
 2025-07-22 05:46:51,833 - INFO - Summary box setup completed.
 2025-07-22 05:46:51,833 - INFO - Summary box setup completed.
+2025-07-22 18:52:24,059 - INFO - No date entered, using default 1995-03-04
+2025-07-22 18:52:24,059 - INFO - No date entered, using default 1995-03-04
+2025-07-22 18:52:25,458 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 18:52:25,458 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 18:52:25,463 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-22 18:52:25,463 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-22 18:52:25,464 - INFO - Summary box setup completed.
+2025-07-22 18:52:25,464 - INFO - Summary box setup completed.

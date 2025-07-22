@@ -13,17 +13,17 @@ def get_avg_grade(summary):
     try: 
  
         if summary['avg'] >= 90:
-            avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🟢"
+            avg_grade = f"Avg Grade: {summary['avg']:.2f} 🟢"
         elif 75 <= summary['avg'] < 90:
-            avg_grade =f"📊 Avg Grade: {summary['avg']:.2f} 🟡"
+            avg_grade =f"Avg Grade: {summary['avg']:.2f} 🟡"
         else:
-            avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🔴"
+            avg_grade = f"Avg Grade: {summary['avg']:.2f} 🔴"
         logging.info(f"Average grade calculated: {avg_grade}")
 
         return avg_grade
     except ValueError as e:
         logging.error(f"Error calculating average grade: {e}")
-        return "📊 Avg Grade: N/A"
+        return " Avg Grade: N/A"
 
 
 def setup_table(df):
@@ -47,26 +47,27 @@ def setup_table(df):
     return rows
 
 
-def grade_bar(df, max_value: float = 100, width: int = 12) -> Group:
+def grade_bar(df, max_value: float = 100, width: int = 10) -> Group:
     bars = []
-
+    df_bar = df.copy()
+    df_bar = df_bar.sort_values(by='mes_cursado', ascending=True)  # Sort by 'mes_cursado'
     try:
-        for i, (value, date_raw) in enumerate(zip(df['nota'], df['mes_cursado'])):
+        for i, (value, date_raw) in enumerate(zip(df_bar['nota'], df_bar['mes_cursado'])):
             # Format date to something nice
             date_str = ""
             if pd.notna(date_raw):
                 if isinstance(date_raw, str):
                     date_raw = pd.to_datetime(date_raw)  # handle if it's still a string
-                date_str = date_raw.strftime("%b %Y")  # e.g., "Jan 2024"
+                date_str = date_raw.strftime("%b %Y") # e.g., "Jan 2024"
 
             # N/A case
             if pd.isna(value) or value < 0:
-                bar_text = Text("❓ N/A", style="dim")
+                bar_text = Text("🟡 N/A", style="dim")
                 panel = Panel(
                     bar_text,
                     title=f"[{i+1}] Sin nota ({date_str})" if date_str else f"[{i+1}] Sin nota",
                     border_style="yellow",
-                    box=box.ROUNDED
+                    box=box.DOUBLE
                 )
                 bars.append(panel)
                 continue
@@ -97,7 +98,7 @@ def grade_bar(df, max_value: float = 100, width: int = 12) -> Group:
                 title=panel_title,
                 border_style=color,
                 box=box.DOUBLE,
-                style="on black"
+                style="none"
             )
 
             bars.append(panel)
@@ -122,11 +123,11 @@ def setup_summary_box(target_date, summary):
         summary_text = (
                     f"       📘PENSUM SUMMARY        \n"
                     f"───────────────────────────────\n"
-                    f"🟢 Total Subjects: {summary['total']}\n"
-                    f"✅ Completed: {summary['completed']}\n"
-                    f"❌ Missing: {summary['missing']}\n"
+                    f"Total Subjects: {summary['total']}\n"
+                    f"Completed: {summary['completed']}\n"
+                    f"Missing: {summary['missing']}\n"
                     f"{avg_grade}\n"
-                    f"📅 Time Left: {years} yrs, {months} mo, {days} days"
+                    f"Time Left: {years} yrs, {months} mo, {days} days"
                 )
         logging.info("Summary box setup completed.")
         return summary_text
