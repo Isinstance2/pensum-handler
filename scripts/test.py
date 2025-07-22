@@ -1,29 +1,20 @@
-# file: show_df_textual.py
+from rich.text import Text
+from rich.console import Console
 
-import pandas as pd
-from textual.app import App, ComposeResult
-from textual.widgets import Static
-from textual.containers import Vertical
+def grade_bar(value: float, max_value: float = 100, width: int = 20) -> Text:
+    percent = value / max_value
+    filled_length = int(width * percent)
+    empty_length = width - filled_length
 
-# Create a test DataFrame
-df = pd.DataFrame({
-    "clave": ["MAT101", "PHY202", "CS303"],
-    "asignatura": ["Matemáticas", "Física", "Computación"],
-    "credito": [4, 3, 5],
-    "completo": [True, False, True],
-})
+    filled = "█" * filled_length
+    empty = "░" * empty_length
 
-class ShowDFApp(App):
-    def compose(self) -> ComposeResult:
-        with Vertical():
-            for _, row in df.iterrows():
-                text = f"{row['clave']} | {row['asignatura']} | {row['credito']} créditos"
-                # Add visual cue if complete
-                if row['completo']:
-                    text = f"[green]{text} ✅[/green]"
-                else:
-                    text = f"[yellow]{text} ⏳[/yellow]"
-                yield Static(text)
+    color = "green" if value >= 75 else "yellow" if value >= 60 else "red"
 
-if __name__ == "__main__":
-    ShowDFApp().run()
+    return Text(filled, style=color) + Text(empty, style="dim")
+
+console = Console()
+test_values = [95, 82, 68, 50, 30, 10]
+
+for val in test_values:
+    console.print(f"Grade {val}:", grade_bar(val))

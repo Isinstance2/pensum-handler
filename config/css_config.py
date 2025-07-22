@@ -134,6 +134,14 @@ CSS = """
     border: none;
     scrollbar-background: transparent;
     scrollbar-color: transparent;
+
+    }
+
+    .summary-container {
+        scrollbar-background: transparent;
+        scrollbar-color: transparent;
+        background: transparent;
+
     }
 
     """

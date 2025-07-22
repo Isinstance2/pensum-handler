@@ -1,7 +1,7 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static, DataTable   
+from textual.widgets import Header, Footer, Button, Static, DataTable
 from textual.widgets import Input
-from textual.containers import Vertical, Horizontal
+from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
 from data.init_db import PensumLoaderFactory
 from datetime import datetime
@@ -14,6 +14,9 @@ from scripts.utils.configuration import load_env
 from scripts.utils.configuration import get_actual_file_to_load
 from config.css_config import CSS
 from scripts.tui_display import setup_summary_box
+from scripts.tui_display import setup_table
+from scripts.tui_display import grade_bar
+from textual.widgets import RichLog
 
 
 #logs
@@ -148,44 +151,20 @@ class UnicaribeScreen(Screen):
                     "Asignatura", "Clave", "Créditos", "Pre-req", "Mes cursado", "Nota", "Estado"
                 )
 
-                for _, row in self.content.iterrows():
-                    is_complete = row["completo"]
-
-                    style = "bold green" if is_complete else "bold white"
-
-                    # Ensure no background override
-                    cells = [
-                        Text(str(row["asignatura"]), style=style),
-                        Text(str(row["clave"]), style=style),
-                        Text(str(row["credito"]), style=style),
-                        Text(str(row["pre_req"]), style=style),
-                        Text(str(row["mes_cursado"])[:10], style=style),
-                        Text(str(row["nota"]), style=style),
-                        Text("Completado" if is_complete else "Pendiente", style=style),
-                    ]
-
+                for cells in setup_table(self.content):
                     table.add_row(*cells)
-
                 yield table
-            
-            #display the DataFrame as a Static widget
-            for _, row in self.db.iterrows():
-                date = str(row['mes_cursado'])
-                gpa  = int(row['nota'])
-
-            
-
+    
             # Summary + Button
-            with Vertical(id="summary_container"):
+            with VerticalScroll(id="summary_container", classes="summary-container"):
                     yield Static(self.summary_text, id="summary_box")
-                    with Horizontal():
-                        pass 
-
-                        
-                        
-
-
                     yield Button("✏️ Editar registro", id="edit_record", classes="start-btn")
+
+                    
+                    
+                    yield Static(grade_bar(self.content), id="grade_bar")
+
+                    
 
         yield Button("Volver", id="back")
         yield Footer()
