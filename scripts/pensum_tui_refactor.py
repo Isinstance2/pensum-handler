@@ -13,6 +13,7 @@ import pandas as pd
 from scripts.utils.configuration import load_env
 from scripts.utils.configuration import get_actual_file_to_load
 from config.css_config import CSS
+from scripts.tui_display import setup_summary_box
 
 
 #logs
@@ -114,31 +115,8 @@ class FileSelectionScreen(Screen):
             self.db = df.copy()
             summary = loader.completed_summary()
 
-            today = datetime.today()
-            target_date = self.app.target_date if hasattr(self.app, 'target_date') else datetime.strptime("2028-03-04", "%Y-%m-%d")
-            if not target_date:
-                target_date = datetime.strptime("1995-03-04", "%Y-%m-%d")
-            delta = target_date - today
-            years = delta.days // 365
-            months = (delta.days % 365) // 30
-            days = (delta.days % 365) % 30
-
-            if summary['avg'] >= 90:
-                 avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🟢"
-            elif 75 <= summary['avg'] < 90:
-                avg_grade =f"📊 Avg Grade: {summary['avg']:.2f} 🟡"
-            else:
-                avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🔴"
-
-            summary_text = (
-                f"       📘PENSUM SUMMARY        \n"
-                f"────────────────────────────────\n"
-                f"🟢 Total Subjects: {summary['total']}\n"
-                f"✅ Completed: {summary['completed']}\n"
-                f"❌ Missing: {summary['missing']}\n"
-                f"{avg_grade}\n"
-                f"📅 Time Left: {years} yrs, {months} mo, {days} days"
-            )
+            target_date = self.app.target_date if hasattr(self.app, 'target_date') else datetime.strptime("1995-03-04", "%Y-%m-%d")
+            summary_text = setup_summary_box(target_date, summary)
 
             file_output = df
 
@@ -253,37 +231,16 @@ class EditRecordScreen(Screen):
                 return
 
             if subject_name:
-                full_path = get_actual_file_to_load(self.file_name) 
+                full_path = get_actual_file_to_load(self.file_name, data_folder) 
                 logging.debug(f"{full_path}") # Get full path
                 loader = PensumLoaderFactory.get_loader('unicaribe', full_path)
                 loader.edit_record(subject_name, subject_month, grade)
                 loader.save()
                 df = loader.df
                 summary = loader.completed_summary()
+                summary_text = setup_summary_box(self.app.target_date, summary)
 
-                today = datetime.today()
-                target_date = datetime.strptime("2028-03-04", "%Y-%m-%d")
-                delta = target_date - today
-                years = delta.days // 365
-                months = (delta.days % 365) // 30
-                days = (delta.days % 365) % 30
-
-                if summary['avg'] >= 90:
-                    avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🟢"
-                elif 75 <= summary['avg'] < 90:
-                    avg_grade =f"📊 Avg Grade: {summary['avg']:.2f} 🟡"
-                else:
-                    avg_grade = f"📊 Avg Grade: {summary['avg']:.2f} 🔴"
-
-            summary_text = (
-                f"       📘PENSUM SUMMARY        \n"
-                f"────────────────────────────────\n"
-                f"🟢 Total Subjects: {summary['total']}\n"
-                f"✅ Completed: {summary['completed']}\n"
-                f"❌ Missing: {summary['missing']}\n"
-                f"{avg_grade}\n"
-                f"📅 Time Left: {years} yrs, {months} mo, {days} days"
-            )
+                
 
             self.app.push_screen(UnicaribeScreen(df, summary_text, self.file_name))
         else:
