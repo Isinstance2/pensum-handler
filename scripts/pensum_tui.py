@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static, DataTable
+from textual.widgets import Header, Footer, Button, Static, DataTable   
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal
 from textual.screen import Screen
@@ -9,6 +9,7 @@ import os
 import sys
 import logging
 from rich.text import Text
+import pandas as pd
 
 log = logging.getLogger()
 log.setLevel(logging.INFO)
@@ -251,6 +252,7 @@ class FileSelectionScreen(Screen):
             
             loader = PensumLoaderFactory.get_loader('unicaribe', file_to_load)
             df = loader.df
+            self.db = df.copy()
             summary = loader.completed_summary()
 
             today = datetime.today()
@@ -295,7 +297,8 @@ class UnicaribeScreen(Screen):
         super().__init__()
         self.content = content
         self.summary_text = summary_text
-        self.file_name = file_name  # Just filename
+        self.file_name = file_name
+        self.db = pd.DataFrame() 
 
     def compose(self) -> ComposeResult:
         yield Header()
@@ -327,10 +330,25 @@ class UnicaribeScreen(Screen):
                     table.add_row(*cells)
 
                 yield table
+            
+            #display the DataFrame as a Static widget
+            for _, row in self.db.iterrows():
+                date = str(row['mes_cursado'])
+                gpa  = int(row['nota'])
+
+            
+
             # Summary + Button
             with Vertical(id="summary_container"):
-                yield Static(self.summary_text, id="summary_box")
-                yield Button("✏️ Editar registro", id="edit_record", classes="start-btn")
+                    yield Static(self.summary_text, id="summary_box")
+                    with Horizontal():
+                        pass 
+
+                        
+                        
+
+
+                    yield Button("✏️ Editar registro", id="edit_record", classes="start-btn")
 
         yield Button("Volver", id="back")
         yield Footer()
@@ -356,10 +374,10 @@ class EditRecordScreen(Screen):
     def compose(self) -> ComposeResult:
         yield Header()
         with Vertical():
-            yield Input(placeholder="Nombre de asignatura:", id="subject_name")
-            yield Input(placeholder="Mes cursado (YYYY-MM):", id="subject_month")
-            yield Input(placeholder="Calificación:", id="grade")
-            yield Button("💾 Guardar Registro", id="save_record", classes="save-btn")
+            yield Input(placeholder="Nombre de asignatura:", id="subject_name", classes="menu-title")
+            yield Input(placeholder="Mes cursado (YYYY-MM):", id="subject_month", classes="menu-title")
+            yield Input(placeholder="Calificación:", id="grade", classes="menu-title")
+            yield Button("💾 Guardar Registro", id="save_record", classes="start-btn")
         yield Footer()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:

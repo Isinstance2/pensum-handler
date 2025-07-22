@@ -80,7 +80,8 @@ class PensumLoaderUnicaribe():
         else:
             raise ValueError("Archivo no soportado. Solo .pdf o .csv")
             
-
+        
+    
     def save(self) -> None:
         # Eliminamos columnas temporales
         if 'asignatura_limpia' in self.df.columns:

@@ -392,3 +392,67 @@
 2025-07-20 05:49:41,924 - INFO - No date entered, using default 1995-03-04
 2025-07-20 05:49:43,233 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
 2025-07-20 05:54:58,121 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 16:49:59,504 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 16:50:10,411 - INFO - Target date set to: 1995-03-20 00:00:00
+2025-07-21 16:50:22,013 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 16:51:57,666 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 16:54:24,515 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 16:54:27,060 - INFO - No date entered, using default 1995-03-04
+2025-07-21 16:54:29,051 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 16:55:34,868 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 16:55:36,466 - INFO - No date entered, using default 1995-03-04
+2025-07-21 16:55:37,726 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 16:59:05,515 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 16:59:17,328 - INFO - No date entered, using default 1995-03-04
+2025-07-21 16:59:21,268 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:03:33,882 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:34:11,922 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:34:13,531 - INFO - No date entered, using default 1995-03-04
+2025-07-21 17:34:15,126 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:34:45,428 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:34:47,975 - INFO - No date entered, using default 1995-03-04
+2025-07-21 17:34:49,615 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:35:03,302 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:35:04,966 - INFO - No date entered, using default 1995-03-04
+2025-07-21 17:35:06,447 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:39:09,592 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:39:11,149 - INFO - No date entered, using default 1995-03-04
+2025-07-21 17:43:00,115 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:44:25,148 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:46:15,722 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:58:14,661 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:58:17,310 - INFO - No date entered, using default 1995-03-04
+2025-07-21 17:58:20,557 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-21 17:59:30,463 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-21 17:59:31,465 - INFO - No date entered, using default 1995-03-04
+2025-07-21 17:59:32,412 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:10:46,357 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:10:47,807 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:10:49,471 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:13:06,339 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:13:07,658 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:13:08,962 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:16:45,983 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:16:47,058 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:16:48,410 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:18:35,764 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:18:36,942 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:18:37,918 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:19:04,566 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:19:05,939 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:19:07,007 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:20:29,624 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:20:31,068 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:20:32,050 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:21:17,607 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:21:18,936 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:21:20,036 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:22:47,262 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:22:48,902 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:22:50,530 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:23:19,234 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:23:20,126 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:23:21,096 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-22 03:24:20,576 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-22 03:24:21,682 - INFO - No date entered, using default 1995-03-04
+2025-07-22 03:24:22,841 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
