@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits
+from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits, ListItem
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
@@ -50,14 +50,11 @@ class PensumApp(App):
         self.files = []
 
     def compose(self) -> ComposeResult:
-        yield Header(show_clock=True)
+        
         yield Static("Selecciona universidad:", classes="menu-title")
         with Vertical(classes="centered-menu"):
             yield Button("Unicaribe", id="unicaribe", classes="start-btn")
             yield Button("UASD 🚧🚧 ", id="uasd", classes="start-btn")
-            yield Button("PUCM 🚧🚧 ", id="pucm", classes="start-btn")
-            
-
             yield LoadingIndicator(classes="loading-indicator")
             
         
@@ -107,14 +104,16 @@ class FileSelectionScreen(Screen):
         self.files = [f for f in os.listdir(data_folder) if f.endswith((".pdf", ".csv"))]
         
     def compose(self) -> ComposeResult:
-        yield Header()
-        Static("Selecciona un archivo para continuar:", classes="menu-title")
+        options = [(file, file) for file in self.files] 
+        
+        yield Static("Selecciona un archivo para cargar", classes="menu-title")
+        
         yield Vertical(
-           
-            Select((file, file) for file in self.files),
-            classes="centered-menu"
+            
+            Select(options=options, prompt="Archivo:",type_to_search=True),
+        classes="centered-menu",
         )
-
+        
         years, months, days = get_countdown(self.app.target_date, alt=True)
         countdown = years * 365 + months * 30 + days
         yield Digits(str(countdown), id="countdown")
@@ -154,7 +153,7 @@ class UnicaribeScreen(Screen):
         self.db = pd.DataFrame() 
 
     def compose(self) -> ComposeResult:
-        yield Header()
+        
 
         with Horizontal():
             # Course list display
@@ -171,7 +170,8 @@ class UnicaribeScreen(Screen):
             # Summary + Button
             with VerticalScroll(id="summary_container", classes="summary-container"):
                     yield Static(self.summary_text, id="summary_box")
-                    yield Button("✏️ Editar registro", id="edit_record", classes="start-btn")
+                    yield Button("✏️  Editar registro", id="edit_record", classes="start-btn")
+                    yield Button("📈 Stats Report", id="stat_report", classes="start-btn")
 
                     
                     
@@ -179,7 +179,7 @@ class UnicaribeScreen(Screen):
 
                     
 
-        yield Button("Volver", id="back")
+        yield Button("Volver", id="back", classes="start-btn")
         yield Footer()
 
 
@@ -188,6 +188,27 @@ class UnicaribeScreen(Screen):
             self.app.push_screen(EditRecordScreen(self.file_name))
         elif event.button.id == "back":
             self.app.pop_screen()
+        elif event.button.id == "stat_report":
+            self.app.push_screen(StatReportScreen(self.file_name))
+
+
+class StatReportScreen(Screen):
+    BINDINGS = [("escape", "app.pop_screen", "Back")]
+
+    def __init__(self, file_name):
+        super().__init__()
+        self.file_nam = file_name
+        self.df = pd.DataFrame
+
+    def compose(self) -> ComposeResult:
+        yield Header()
+        yield Horizontal(
+            Static("Consultando al asistente virtual...", id="status"),
+            LoadingIndicator(id="load-in", color="#7B68EE")
+        )
+
+            
+
 
 
 class EditRecordScreen(Screen):

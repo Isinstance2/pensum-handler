@@ -3,7 +3,10 @@ from data.init_db import PensumLoaderFactory
 from scripts.utils.configuration import get_actual_file_to_load
 import json
 
-File_to_load = get_actual_file_to_load("PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv", "/home/oa/projects/uni/data")
+file_name = "PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv"
+data_folder = "/home/oa/projects/uni/data"
+
+File_to_load = get_actual_file_to_load(file_name, data_folder )
 loader = PensumLoaderFactory().get_loader('unicaribe', File_to_load)
 df = loader.df
 summary = loader.completed_summary()
@@ -18,14 +21,23 @@ llama_context = {
     't_sub' : f"{summary['total']} materias",
     'c_sub' : f"{summary['completed']} materias completadas",
     'm_sub' : f"{summary['missing']} materias pendientes",
-    'avg' : df['nota'].mean(),
+    'avg' : f" Avg : {df['nota'].mean()}",
     
     },
 
-    'subject_list' : {df['asignatura'].tolist()},
+    'student_data' : {
+
+    'data_columns' : df.columns.tolist(),
+    'asignatura' : df['asignatura'].tolist(),
+    'clave_asignatura' : df['clave'].tolist(),
+    'creditos' : df['credito'].tolist(),
+    'pre_requisitos' : df['pre_req'].tolist(),
+    'mes_cursado' : df['mes_cursado'].tolist(),
+    'calificaciones' : df['nota'].tolist(),
+
 
     }
-
+}
 
 
 
@@ -45,23 +57,30 @@ Evita saludos, introducciones o preguntas finales.
 
 user_prompt = f"""
 Este conjunto de datos contiene el historial académico de un estudiante universitario. 
-Cada fila representa una asignatura con su respectiva nota, crédito, y fecha de cursado. 
-La columna 'completo' indica el estado de la materia:
-- Si es 'Pendiente', el estudiante aún no ha cursado esa asignatura.
-- Si es 'Completado', significa que ya ha sido aprobada y evaluada.
+las calificaciones nan(vacias) , pueden ser ignorados. Son nulos. No digas absolutamente nada acerca de las calificaciones nulas, ignoralas completamente.
+Las materias que son pendientes , ignorlas, no la menciones para absolutamente nada. 
+Debe realizar un análisis profesional, en lenguaje formal que sea de ayuda para el estudiante. segun los datos recibidos.
+LAS MATERIAS PENDIENTES PUEDEN SER IGNARADAS TODO DATO VACIO PUEDE SER IGNORADOS SOLO CONCENTRATE CON LAS QUE NO ESTAN VACIAS. 
+NO ME HABLES DE NADA DE LAS MATERIAS PENDIENTE EN TU ANALISIS. 
 
-Debe realizar un análisis profesional, en lenguaje formal. El análisis debe identificar:
+LAS CALIFICACIONES DE 90 PARA ARRIBA SON EXCELENTE DE 80 - 90 BUENAS Y DE 80 PARA ABAJO = QUE TIENE QUE MEJORAR. 
+recuerda... Si una calificacion es por ejemplo 90, entonces es excelente
 
-1. Estadísticas generales: promedio de nota, cantidad de asignaturas completadas y pendientes, total de créditos aprobados.
-2. Riesgos académicos: notas menores a 80 se consideran de riesgo; entre 80 y 89 son rendimiento medio, y de 90 en adelante indican alto rendimiento.
-3. Alertas: materias pendientes acumuladas, baja progresión o rendimiento deficiente en áreas específicas.
-4. Recomendaciones: posibles rutas óptimas para cursar asignaturas restantes y priorización por riesgo o pre-requisitos.
-5. Si es posible, identificar patrones o correlaciones entre fechas, tipos de materias y desempeño.
-6. Incluir un reporte resumen y otro más detallado con asignaturas clave.
+Ejemplo del output:
+
+Análisis del desempeño académico del estudiante:
+
+La media de calificaciones del estudiante es de x, lo que indica un rendimiento excelente. De las x materias completadas, hay varias que tienen calificaciones superiores a los x, lo que sugiere una capacidad destacada para aprender y dominar los conceptos.
+
+Entre las materias con calificaciones superiores a los 90, se encuentran "MÉTODO DEL TRABAJO ACADÉMICO" (97.0), "METODOLOGÍA DE LA INVESTIGACIÓN" (98.0) y "ADMINISTRACION I" (94.0). Estas materias pueden ser importantes para el estudiante en términos de desarrollo académico y profesional.
+
+
+Es importante destacar que no hay calificaciones nulas ni pendientes en las materias completadas, lo que sugiere un buen compromiso y gestión del tiempo por parte del estudiante.
+
 
 Aquí están los datos del estudiante:
 
-{json.dumps(json_data, ensure_ascii=False, indent=2)} """
+{json.dumps(llama_context, ensure_ascii=False, indent=2)} """
 
 response = ollama.chat(
 model="llama3",

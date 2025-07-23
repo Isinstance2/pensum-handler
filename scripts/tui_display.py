@@ -31,7 +31,7 @@ def setup_table(df):
     for _, row in df.iterrows():
         is_complete = row["completo"]
 
-        style = "bold green" if is_complete else "bold white"
+        style = "bold blue" if is_complete else "bold white"
 
         # Ensure no background override
         cells = [
@@ -62,12 +62,12 @@ def grade_bar(df, max_value: float = 100, width: int = 10) -> Group:
 
             # N/A case
             if pd.isna(value) or value < 0:
-                bar_text = Text("🟡 N/A", style="dim")
+                bar_text = Text("⚪ N/A", style="dim")
                 panel = Panel(
                     bar_text,
                     title=f"[{i+1}] Sin nota ({date_str})" if date_str else f"[{i+1}] Sin nota",
                     border_style="yellow",
-                    box=box.DOUBLE
+                    box=box.MINIMAL_DOUBLE_HEAD
                 )
                 bars.append(panel)
                 continue
@@ -89,15 +89,15 @@ def grade_bar(df, max_value: float = 100, width: int = 10) -> Group:
             bar_text.append(f"{emoji} {value:5.1f} ", style="bold")
             bar_text.append(filled, style=f"bold {color}")
             bar_text.append(empty, style="dim")
-            bar_text.append("|", style="green")
+            bar_text.append("|", style="orchid")
 
             # Panel with date
-            panel_title = f"[{i+1}] {date_str}" if date_str else f"[{i+1}]"
+            panel_title = f"  {date_str}" if date_str else f"[{i+1}]"
             panel = Panel(
                 bar_text,
                 title=panel_title,
-                border_style=color,
-                box=box.DOUBLE,
+                border_style="white",
+                box=box.MINIMAL_DOUBLE_HEAD,    
                 style="none"
             )
 
@@ -143,7 +143,7 @@ def setup_summary_box(target_date, summary):
 
         summary_text = (
                     f"       📘PENSUM SUMMARY        \n"
-                    f"───────────────────────────────\n"
+                    f"──────────────────────────────\n"
                     f"Total Subjects: {summary['total']}\n"
                     f"Completed: {summary['completed']}\n"
                     f"Missing: {summary['missing']}\n"

@@ -2,21 +2,36 @@ CSS = """
     Screen {
         align: center bottom;
         background:  $surface;
-        color: transparent;
+        color: white;
+        border: none;
     }
 
     .menu-title {
     background: transparent;
     color: #E0E6ED;
-    border: round #10B981;
+    border: round #7B68EE;
     }
 
+    
+    #id:hover {
+        background: #7B68EE;
+
+    }
+        
+    #grade_bar {
+    
+        background: $surface;
+        color: white;
+        border: none;
+
+    }
+    
     .centered-menu {
     align: center bottom;
     width: 100%;
     align-horizontal: center;
     background: transparent;
-    color: transparent;
+    color: green;
 
     }
 
@@ -50,6 +65,12 @@ CSS = """
 
     }
 
+    .start-btn:hover {
+        background:#7B68EE;
+        color: #FFFFFF;
+
+    }
+
 
     /* Base Buttons */
     Button {
@@ -64,7 +85,7 @@ CSS = """
     }
 
     Button:hover {
-        background: #10B981;
+        background: #3B82F6;
         color: #FFFFFF;
         border: round none ;
     }
@@ -72,12 +93,19 @@ CSS = """
     /* Static Boxes */
     Static {
         color: #E0E6ED;
-        background: #1E222A;
-        border: round #1F2937;
+        background: transparent;
+        border: transparent;
         padding: 1 2;
         width: 100%;
         height: auto;
         text-style: bold;
+    }
+
+    Static:hover {
+        background: #7B68EE;
+        color: #FFFFFF;
+        border: none ;
+
     }
 
     /* Summary Panel */
@@ -181,7 +209,7 @@ CSS = """
     }
             
     LoadingIndicator {
-        color: green;
+        color: #7B68EE;
         width: 100%;    
     }
 
@@ -208,10 +236,32 @@ CSS = """
     margin: 1 2;
     align: center top;
     background: transparent;
-    color: green;
-    border: none;
+    color: transparent;
+    border: round black;
 
     }
+
+    Select > Option:hover{
+    background: transparent;
+    color:transparent;
+    }
+
+    Select:focus {
+    border: transparent;
+    background: transparent;
+    }
+
+
+    Select > Option {
+    background: transparent;
+    color: transparent;
+    }
+
+    Select > Option:nocolor {
+    background: transparent;
+    color: transparent;
+    }    
+
 
     #target_date {
     border: black;
