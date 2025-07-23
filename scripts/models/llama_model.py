@@ -8,18 +8,25 @@ loader = PensumLoaderFactory().get_loader('unicaribe', File_to_load)
 df = loader.df
 summary = loader.completed_summary()
 
-llama_context = {
-    'general_data' : {
 
-    't_sub' : summary['total'],
-    'c_sub' : summary['completed'],
-    'm_sub' : summary['missing'],
+
+
+
+llama_context = {
+    'summary_data' : {
+
+    't_sub' : f"{summary['total']} materias",
+    'c_sub' : f"{summary['completed']} materias completadas",
+    'm_sub' : f"{summary['missing']} materias pendientes",
     'avg' : df['nota'].mean(),
     
+    },
+
+    'subject_list' : {df['asignatura'].tolist()},
+
     }
 
 
-}
 
 
 
