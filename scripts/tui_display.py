@@ -110,14 +110,35 @@ def grade_bar(df, max_value: float = 100, width: int = 10) -> Group:
         return Group(Text("❗ Error al generar barras", style="bold red"))
 
 
-def setup_summary_box(target_date, summary):    
-    """Setup the summary box."""
+
+
+def get_countdown(target_date, alt: bool = False):
+    """Calculate the countdown to the target date."""
     try:
-        today = datetime.today()
+        today = datetime.now()
         delta = target_date - today
+
         years = delta.days // 365
         months = (delta.days % 365) // 30
         days = (delta.days % 365) % 30
+
+        if alt:
+            logging.info(f"Countdown calculated (tuple): {years}, {months}, {days}")
+            return years, months, days
+        else:
+            countdown_text = f"{years} yrs, {months} mo, {days} days"
+            logging.info(f"Countdown calculated: {countdown_text}")
+            return countdown_text
+
+    except Exception as e:
+        logging.error(f"Error calculating countdown: {e}")
+        return "Error in countdown calculation"
+
+
+def setup_summary_box(target_date, summary):    
+    """Setup the summary box."""
+    try:
+        countdown = get_countdown(target_date)
         avg_grade = get_avg_grade(summary)
 
         summary_text = (
@@ -127,7 +148,7 @@ def setup_summary_box(target_date, summary):
                     f"Completed: {summary['completed']}\n"
                     f"Missing: {summary['missing']}\n"
                     f"{avg_grade}\n"
-                    f"Time Left: {years} yrs, {months} mo, {days} days"
+                    f"{countdown}"
                 )
         logging.info("Summary box setup completed.")
         return summary_text

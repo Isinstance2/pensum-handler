@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static, DataTable
+from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
@@ -17,6 +17,8 @@ from scripts.tui_display import setup_summary_box
 from scripts.tui_display import setup_table
 from scripts.tui_display import grade_bar
 from textual.widgets import RichLog
+from tui_display import get_countdown
+
 
 
 #logs
@@ -54,8 +56,10 @@ class PensumApp(App):
             yield Static("Selecciona universidad:", classes="menu-title")
             yield Button("Unicaribe", id="unicaribe", classes="start-btn")
             yield Button("🚪 Exit", id="exit")
-            yield Input(placeholder="Fecha de termino aproximada (YYYY-MM-DD)", id="target_date", classes="course-input")
+            yield Input(placeholder="Fecha de termino aproximada (YYYY-MM-DD)", id="target_date")
             yield Static("Ejemplo: 2028-03-04", classes="menu-title")
+            yield LoadingIndicator(classes="loading-indicator")
+            yield Static("Ejemplo: 2028-03-04", classes="ejemplo-title")
         
         yield Footer()
 
@@ -94,25 +98,25 @@ class PensumApp(App):
 class FileSelectionScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
 
+    def __init__(self):
+        super().__init__()
+        self.files = [f for f in os.listdir(data_folder) if f.endswith((".pdf", ".csv"))]
+        
     def compose(self) -> ComposeResult:
         yield Header()
-        yield Static("/data:", classes="menu-title")
-        self.files = [f for f in os.listdir(data_folder) if f.endswith((".pdf", ".csv"))]
+        yield Vertical(Select((file, file) for file in self.files))
 
-        for idx, fname in enumerate(self.files):
-            yield Static(f"[{idx}] {fname}", classes="file-item")
+        years, months, days = get_countdown(self.app.target_date, alt=True)
+        countdown = years * 365 + months * 30 + days
+        yield Digits(str(countdown), id="countdown")
 
-        yield Input(placeholder="numero del archivo", id="file_number", classes="course-input")
         yield Footer()
 
-    def on_input_submitted(self, event: Input.Submitted) -> None:
-        try:
-            index = int(event.value)
-            selected_file = self.files[index]
+    async def on_select_changed(self, event: Select.Changed) -> None:
 
-            file_to_load = get_actual_file_to_load(selected_file, data_folder)  # filename only
-
-            
+        try:    
+            self.selected_file = event.value
+            file_to_load = get_actual_file_to_load(self.selected_file, data_folder)
             loader = PensumLoaderFactory.get_loader('unicaribe', file_to_load)
             df = loader.df
             self.db = df.copy()
@@ -123,7 +127,7 @@ class FileSelectionScreen(Screen):
 
             file_output = df
 
-            self.app.push_screen(UnicaribeScreen(file_output, summary_text, file_to_load))
+            await self.app.push_screen(UnicaribeScreen(file_output, summary_text, file_to_load))
 
         except (ValueError, IndexError) as e:
             self.app.bell()

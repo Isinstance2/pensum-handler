@@ -1,8 +1,8 @@
 CSS = """
     Screen {
         align: center middle;
-        background: black;
-        color: #E0E6ED;
+        background:  $surface;
+        color: $text;
     }
 
     .menu-title {
@@ -129,8 +129,8 @@ CSS = """
     }
 
     DataTable {
-    background: transparent;
-    color: yellow;
+    background: $surface;
+    color: $text;
     border: none;
     scrollbar-background: transparent;
     scrollbar-color: transparent;
@@ -143,5 +143,40 @@ CSS = """
         background: transparent;
 
     }
+            
+    LoadingIndicator {
+        color: green;
+    }
+
+    
+    .ejemplo {
+        color: transparent;
+        background: transparent;
+        border: none;
+        outline: none;
+
+    }
+
+
+
+    Select {
+    width: 60;
+    height: 30;
+    margin: 1 2;
+    align: center top;
+    background: transparent;
+    color: green;
+    border: none;
+
+    }
+
+    #target_date {
+    border: black;
+    color: white;
+
+    }
+        
+    
+    
 
     """
