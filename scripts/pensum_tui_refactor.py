@@ -51,17 +51,21 @@ class PensumApp(App):
 
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
+        yield Static("Selecciona universidad:", classes="menu-title")
         with Vertical(classes="centered-menu"):
-            # Main menu
-            yield Static("Selecciona universidad:", classes="menu-title")
             yield Button("Unicaribe", id="unicaribe", classes="start-btn")
-            yield Button("🚪 Exit", id="exit")
-            yield Input(placeholder="Fecha de termino aproximada (YYYY-MM-DD)", id="target_date")
-            yield Static("Ejemplo: 2028-03-04", classes="menu-title")
+            yield Button("UASD 🚧🚧 ", id="uasd", classes="start-btn")
+            yield Button("PUCM 🚧🚧 ", id="pucm", classes="start-btn")
+            
+
             yield LoadingIndicator(classes="loading-indicator")
-            yield Static("Ejemplo: 2028-03-04", classes="ejemplo-title")
+            
         
         yield Footer()
+        yield Input(placeholder="Fecha de termino aproximada (YYYY-MM-DD)", id="target_date")
+        yield Static("Ejemplo: 2028-03-04", id="ejemplo")
+        yield Button("🚪 Exit", id="exit")
+        
 
     def on_button_pressed(self, event: Button.Pressed):
         if event.button.id == "unicaribe":
@@ -104,7 +108,12 @@ class FileSelectionScreen(Screen):
         
     def compose(self) -> ComposeResult:
         yield Header()
-        yield Vertical(Select((file, file) for file in self.files))
+        Static("Selecciona un archivo para continuar:", classes="menu-title")
+        yield Vertical(
+           
+            Select((file, file) for file in self.files),
+            classes="centered-menu"
+        )
 
         years, months, days = get_countdown(self.app.target_date, alt=True)
         countdown = years * 365 + months * 30 + days

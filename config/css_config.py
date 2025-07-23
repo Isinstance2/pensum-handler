@@ -1,8 +1,8 @@
 CSS = """
     Screen {
-        align: center middle;
+        align: center bottom;
         background:  $surface;
-        color: $text;
+        color: transparent;
     }
 
     .menu-title {
@@ -12,12 +12,45 @@ CSS = """
     }
 
     .centered-menu {
-    align: center top;
+    align: center bottom;
     width: 100%;
     align-horizontal: center;
+    background: transparent;
+    color: transparent;
+
     }
 
-    
+    #file_select {
+        background: $background; /* or a hex like #222 */
+        color: white;
+        border: solid green; /* Change to match your theme */
+        
+    }
+
+    #file_select:focus {
+        border: solid yellow;
+        background: #111; /* Different when focused */
+    }
+
+    #file_select > .prompt {
+        color: gray; /* Custom prompt color */
+    }
+
+    /* Optional: tweak dropdown item styles */
+    #file_select > .option--selected {
+        background: darkgreen;
+        color: white;
+    }
+            
+    .start-btn {
+        margin: 2 2;
+        align: center middle;
+        width: 100%;
+        padding: 1 2;
+
+    }
+
+
     /* Base Buttons */
     Button {
         margin: 1 2;
@@ -55,6 +88,9 @@ CSS = """
         background: transparent;
         
     }
+
+
+    
 
     /* Edit Button */
     .edit-btn {
@@ -146,16 +182,23 @@ CSS = """
             
     LoadingIndicator {
         color: green;
+        width: 100%;    
     }
 
+ 
     
-    .ejemplo {
-        color: transparent;
-        background: transparent;
+    #ejemplo {
+        color: white;
         border: none;
-        outline: none;
+        background: $surface;
+        padding: 0 1;
+        margin: 1 0;
+        height: auto;
+        align: center bottom ;
 
+        
     }
+    
 
 
 
@@ -173,9 +216,12 @@ CSS = """
     #target_date {
     border: black;
     color: white;
+    align: center bottom ;
+    margin: 1 0;
 
     }
-        
+
+  
     
     
 

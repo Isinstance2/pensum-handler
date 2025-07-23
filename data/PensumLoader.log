@@ -1263,3 +1263,142 @@
 2025-07-23 00:38:40,844 - INFO - Countdown calculated (tuple): -31, 7, 5
 2025-07-23 00:39:35,209 - DEBUG - 🔥 Logging initialized correctamente
 2025-07-23 00:40:08,906 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:44:02,581 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:45:34,357 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:45:52,058 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:46:27,928 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:46:49,481 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:47:13,806 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:47:41,242 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:48:28,621 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:48:41,224 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:49:31,899 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:50:22,239 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:50:32,185 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:50:45,280 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:50:59,918 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:51:17,099 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:51:28,460 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:52:01,727 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:52:12,994 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:52:25,409 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:52:49,940 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:53:11,136 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:53:30,956 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:53:42,499 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:54:19,763 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:54:48,935 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:55:45,120 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:56:11,753 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:57:12,493 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:58:08,350 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:58:27,865 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:59:14,966 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 00:59:50,898 - INFO - No date entered, using default 1995-03-04
+2025-07-23 00:59:50,906 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 00:59:56,522 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-23 00:59:56,524 - INFO - Countdown calculated: -31 yrs, 7 mo, 5 days
+2025-07-23 00:59:56,524 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-23 00:59:56,524 - INFO - Summary box setup completed.
+2025-07-23 01:00:28,590 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:02:59,836 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:03:20,960 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:03:51,760 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:04:37,777 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:04:53,636 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:05:38,620 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:06:26,760 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:06:37,060 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:07:37,528 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:07:51,824 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:08:03,272 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:08:58,569 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:15:00,465 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:16:24,896 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:17:08,019 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:17:19,700 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:17:28,801 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:17:38,126 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:22:49,778 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:23:12,457 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:23:30,998 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:24:34,313 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:26:10,214 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:26:25,537 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:26:53,117 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:27:57,354 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:28:24,542 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:28:28,863 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:28:28,871 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:28:31,180 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-23 01:28:31,182 - INFO - Countdown calculated: -31 yrs, 7 mo, 5 days
+2025-07-23 01:28:31,182 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-23 01:28:31,182 - INFO - Summary box setup completed.
+2025-07-23 01:28:52,665 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:28:55,635 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:28:55,643 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:29:03,144 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:29:45,701 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:29:52,872 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:30:10,779 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:30:10,787 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:30:50,640 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:30:52,203 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:30:52,207 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:31:46,792 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:31:47,851 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:31:47,858 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:31:59,765 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:32:01,604 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:32:01,608 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:32:16,171 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:32:26,425 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:32:28,710 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:32:28,718 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:33:10,256 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:33:12,342 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:33:12,350 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:33:51,687 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:33:52,780 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:33:52,787 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:34:51,991 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:35:12,332 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:35:14,002 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:35:14,011 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:35:42,388 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:35:43,667 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:35:43,675 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:35:48,548 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-23 01:35:48,549 - INFO - Countdown calculated: -31 yrs, 7 mo, 5 days
+2025-07-23 01:35:48,549 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-23 01:35:48,549 - INFO - Summary box setup completed.
+2025-07-23 01:36:43,052 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:36:44,732 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:36:44,740 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:50:04,436 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:50:06,664 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:50:06,672 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:51:54,802 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:51:55,934 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:51:55,936 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:53:44,119 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:53:46,022 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:53:46,030 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:53:52,082 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-23 01:53:52,085 - INFO - Countdown calculated: -31 yrs, 7 mo, 5 days
+2025-07-23 01:53:52,085 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-23 01:53:52,085 - INFO - Summary box setup completed.
+2025-07-23 01:55:27,499 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:55:56,590 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:55:58,491 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:55:58,499 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:56:40,592 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:56:41,870 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:56:41,879 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:56:54,576 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:56:55,636 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:56:55,644 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:57:22,036 - DEBUG - 🔥 Logging initialized correctamente
+2025-07-23 01:57:23,493 - INFO - No date entered, using default 1995-03-04
+2025-07-23 01:57:23,501 - INFO - Countdown calculated (tuple): -31, 7, 5
+2025-07-23 01:58:42,434 - DEBUG - 🔥 Logging initialized correctamente
