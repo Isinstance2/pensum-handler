@@ -3,6 +3,9 @@ from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIn
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
+from textual.message import Message
+from textual import work
+import asyncio
 from data.init_db import PensumLoaderFactory
 from datetime import datetime
 import os
@@ -198,14 +201,24 @@ class StatReportScreen(Screen):
     def __init__(self, file_name):
         super().__init__()
         self.file_nam = file_name
-        self.df = pd.DataFrame
+        self.df = pd.DataFrame()
 
     def compose(self) -> ComposeResult:
-        yield Header()
-        yield Horizontal(
+        
+        yield Vertical(
             Static("Consultando al asistente virtual...", id="status"),
-            LoadingIndicator(id="load-in", color="#7B68EE")
+            LoadingIndicator(id="load-in")
         )
+
+class DataReady(Message):
+    def __init__(self, sender, content : str) -> None:
+        self.content = content
+        super().__init__(sender)
+
+async def on_mount(self):
+    self.query_one("#load-in").display = True
+    self.query_one("status").update("💡 El asistente está pensando...")
+
 
             
 

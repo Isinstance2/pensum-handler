@@ -3,7 +3,7 @@ import os
 from scripts.pensum_tui import logging
 
 
-def load_env(env_path:str, variable_name):
+def load_env(env_path:str, variable_name:str):
     """Load environment variables from a .env file."""
     try:
         load_dotenv(env_path)
