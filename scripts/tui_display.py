@@ -4,7 +4,6 @@ from rich.text import Text
 import pandas as pd
 from rich.console import Group
 from rich.panel import Panel
-from rich.align import Align
 from rich import box
 from datetime import datetime
 

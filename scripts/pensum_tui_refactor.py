@@ -21,6 +21,7 @@ from scripts.tui_display import setup_table
 from scripts.tui_display import grade_bar
 from textual.widgets import RichLog
 from tui_display import get_countdown
+from scripts.models.llama_model import AiCompanion
 
 
 
@@ -195,13 +196,21 @@ class UnicaribeScreen(Screen):
             self.app.push_screen(StatReportScreen(self.file_name))
 
 
+class DataReady(Message):
+    def __init__(self, sender, content : str, file_name : str) -> None:
+        self.content = content
+        self.sender = sender
+        self.file_name = file_name
+        super().__init__()
+
+
 class StatReportScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
 
     def __init__(self, file_name):
         super().__init__()
-        self.file_nam = file_name
-        self.df = pd.DataFrame()
+        self.file_name = file_name
+        
 
     def compose(self) -> ComposeResult:
         
@@ -209,18 +218,33 @@ class StatReportScreen(Screen):
             Static("Consultando al asistente virtual...", id="status"),
             LoadingIndicator(id="load-in")
         )
+        
+    async def on_mount(self):
+        self.query_one("#load-in").display = True
+        self.query_one("#status").update("💡 El asistente está pensando...")
 
-class DataReady(Message):
-    def __init__(self, sender, content : str) -> None:
-        self.content = content
-        super().__init__(sender)
+        await self.run_ai_query()
 
-async def on_mount(self):
-    self.query_one("#load-in").display = True
-    self.query_one("status").update("💡 El asistente está pensando...")
+    async def run_ai_query(self):
+        await asyncio.sleep(3)
 
-
+        try:
+            ai = AiCompanion(self.file_name) 
+            result = ai.call_assistant()
             
+            self.post_message(DataReady(self, result, self.file_name))
+            logging.debug("Initializing AI function...")
+
+        except Exception as e:
+            logging.error(f"Error: {e}")
+
+    async def on_data_ready(self, message:DataReady):
+        self.query_one("#load-in").display = False
+        self.query_one("#status").update(message.content)
+
+        
+
+
 
 
 

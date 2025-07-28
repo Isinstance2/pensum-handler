@@ -2,8 +2,22 @@ import ollama
 import json
 from data.init_db import PensumLoaderFactory
 from scripts.utils.configuration import load_env
-from scripts.pensum_tui import logging
 from scripts.utils.configuration import get_actual_file_to_load
+import sys
+import logging
+
+log = logging.getLogger()
+log.setLevel(logging.INFO)
+
+file_handler = logging.FileHandler("llama_model.log", mode='a')
+file_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+log.addHandler(file_handler)
+
+console_handler = logging.StreamHandler(sys.__stdout__)
+console_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+log.addHandler(console_handler)
+
+
 
 class AiCompanion():
     def __init__(self, selected_file):
@@ -81,14 +95,20 @@ class AiCompanion():
             logging.error(f"Error initiating assistant {e}")
 
     def call_assistant(self):
-        self.response = ollama.chat(
-            model="llama3",
-            messages=[
-            {"role": "system", "content": self.system_prompt.strip()},
-            {"role": "user", "content": self.user_prompt.strip()}
-            ]
-            )
-        return str(self.response['message']['content'])
+        try:
+            logging.debug("Initializing . . .")
+            self.response = ollama.chat(
+                model="llama3",
+                messages=[
+                {"role": "system", "content": self.system_prompt.strip()},
+                {"role": "user", "content": self.user_prompt.strip()}
+                ]
+                )
+            logging.info("Agent has been initiated.")
+            return str(self.response['message']['content'])
+        except Exception as e:
+            logging.error(f"Couldn't initialize AI agent : {e}")
+
 
 
 
