@@ -4,14 +4,11 @@ from textual.widgets import Input
 from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
 from textual.message import Message
-from textual import work
 import asyncio
 from data.init_db import PensumLoaderFactory
 from datetime import datetime
 import os
-import sys
 import logging
-from rich.text import Text
 import pandas as pd
 from scripts.utils.configuration import load_env
 from scripts.utils.configuration import get_actual_file_to_load
@@ -19,25 +16,12 @@ from config.css_config import CSS
 from scripts.tui_display import setup_summary_box
 from scripts.tui_display import setup_table
 from scripts.tui_display import grade_bar
-from textual.widgets import RichLog
 from tui_display import get_countdown
 from scripts.models.llama_model import AiCompanion
+from scripts.utils.configuration import load_logging
 
-
-
-#logs
-log = logging.getLogger()
-log.setLevel(logging.INFO)
-
-file_handler = logging.FileHandler("PensumLoader.log", mode='a')
-file_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
-log.addHandler(file_handler)
-
-console_handler = logging.StreamHandler(sys.__stdout__)
-console_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
-log.addHandler(console_handler)
-
-
+load_logging()
+import logging
 
 # Ensure the data folder exists
 ENV_PATH = '/home/oa/projects/uni/config/.env'
@@ -225,12 +209,11 @@ class StatReportScreen(Screen):
 
         await self.run_ai_query()
 
-    async def run_ai_query(self):
-        await asyncio.sleep(3)
+    async def run_ai_query(self):   
 
         try:
             ai = AiCompanion(self.file_name) 
-            result = ai.call_assistant()
+            result = await asyncio.to_thread(ai.call_assistant)
             
             self.post_message(DataReady(self, result, self.file_name))
             logging.debug("Initializing AI function...")

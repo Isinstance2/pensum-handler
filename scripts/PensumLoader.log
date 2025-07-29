@@ -2196,3 +2196,95 @@
 2025-07-28 14:27:59,084 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2025-07-28 14:27:59,084 - INFO - Agent has been initiated.
 2025-07-28 14:27:59,084 - INFO - Agent has been initiated.
+2025-07-28 19:32:11,623 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:32:11,623 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:32:11,631 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:32:11,631 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:32:13,462 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:32:13,462 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:32:13,464 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:32:13,464 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:32:13,464 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:32:13,464 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:32:13,464 - INFO - Summary box setup completed.
+2025-07-28 19:32:13,464 - INFO - Summary box setup completed.
+2025-07-28 19:32:19,490 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:32:19,490 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:34:47,327 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:34:47,327 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:34:47,332 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:34:47,332 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:34:50,124 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:34:50,124 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:34:50,125 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:34:50,125 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:34:50,125 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:34:50,125 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:34:50,126 - INFO - Summary box setup completed.
+2025-07-28 19:34:50,126 - INFO - Summary box setup completed.
+2025-07-28 19:35:04,429 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:35:04,429 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:35:45,491 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-28 19:35:45,491 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-28 19:35:45,491 - INFO - Agent has been initiated.
+2025-07-28 19:35:45,491 - INFO - Agent has been initiated.
+2025-07-28 19:47:26,025 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:47:26,025 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:47:26,034 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:47:26,034 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:47:28,833 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:47:28,833 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:47:28,836 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:47:28,836 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:47:28,837 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:47:28,837 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:47:28,839 - INFO - Summary box setup completed.
+2025-07-28 19:47:28,839 - INFO - Summary box setup completed.
+2025-07-28 19:47:35,521 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:47:35,521 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:50:24,458 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-28 19:50:24,458 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-28 19:50:24,460 - INFO - Agent has been initiated.
+2025-07-28 19:50:24,460 - INFO - Agent has been initiated.
+2025-07-28 19:56:23,617 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:56:23,617 - INFO - No date entered, using default 1995-03-04
+2025-07-28 19:56:23,626 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:56:23,626 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 19:56:26,176 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:56:26,176 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:56:26,178 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:56:26,178 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 19:56:26,178 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:56:26,178 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 19:56:26,178 - INFO - Summary box setup completed.
+2025-07-28 19:56:26,178 - INFO - Summary box setup completed.
+2025-07-28 19:56:30,388 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:56:30,388 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 19:59:45,534 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-28 19:59:45,534 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-28 19:59:45,535 - INFO - Agent has been initiated.
+2025-07-28 19:59:45,535 - INFO - Agent has been initiated.
+2025-07-28 20:01:35,284 - INFO - No date entered, using default 1995-03-04
+2025-07-28 20:01:35,284 - INFO - No date entered, using default 1995-03-04
+2025-07-28 20:01:35,292 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 20:01:35,292 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 20:01:38,170 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 20:01:38,170 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 20:01:38,172 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 20:01:38,172 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 20:01:38,172 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 20:01:38,172 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 20:01:38,172 - INFO - Summary box setup completed.
+2025-07-28 20:01:38,172 - INFO - Summary box setup completed.
+2025-07-28 20:03:49,017 - INFO - No date entered, using default 1995-03-04
+2025-07-28 20:03:49,024 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 20:03:51,777 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 20:03:51,779 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 20:03:51,779 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 20:03:51,779 - INFO - Summary box setup completed.
+2025-07-28 20:19:33,904 - INFO - No date entered, using default 1995-03-04
+2025-07-28 20:19:33,905 - INFO - Countdown calculated (tuple): -31, 7, 0
+2025-07-28 20:19:36,188 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-07-28 20:19:36,189 - INFO - Countdown calculated: -31 yrs, 7 mo, 0 days
+2025-07-28 20:19:36,190 - INFO - Average grade calculated: Avg Grade: 93.57 🟢
+2025-07-28 20:19:36,190 - INFO - Summary box setup completed.

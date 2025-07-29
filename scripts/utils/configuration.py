@@ -1,6 +1,26 @@
 from dotenv import load_dotenv
 import os
-from scripts.pensum_tui import logging
+import logging
+
+
+
+def load_logging(logfile="PensumLoader.log", level=logging.INFO):
+    logger = logging.getLogger()  # ✅ Don't shadow the module name
+    logger.setLevel(level)
+
+    # Remove all handlers (prevents duplicates)
+    for handler in logger.handlers[:]:
+        logger.removeHandler(handler)
+
+    # File Handler
+    file_handler = logging.FileHandler(logfile, mode='a')
+    file_handler.setFormatter(logging.Formatter(
+        "%(asctime)s - %(levelname)s - %(message)s"
+    ))
+    logger.addHandler(file_handler)
+
+
+
 
 
 def load_env(env_path:str, variable_name:str):
@@ -28,6 +48,9 @@ def get_actual_file_to_load(file_name, data_folder):
     except Exception as e:
         logging.error(f"Error checking for updated CSV: {e}")
         return file_name
+    
+
+    
 
 
     
