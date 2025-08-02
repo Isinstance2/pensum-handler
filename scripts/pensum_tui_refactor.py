@@ -207,7 +207,7 @@ class StatReportScreen(Screen):
         self.query_one("#load-in").display = True
         self.query_one("#status").update("💡 El asistente está pensando...")
 
-        await self.run_ai_query()
+        asyncio.create_task(self.run_ai_query())
 
     async def run_ai_query(self):   
 
