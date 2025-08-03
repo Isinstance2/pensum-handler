@@ -213,7 +213,90 @@ CSS = """
         width: 100%;    
     }
 
- 
+  
+
+    Switch {
+        height: auto;
+        width: auto;
+        border:  round #7B68EE;
+        background:$surface;
+        
+        
+    }
+
+    Switch > .switch--knob {
+    background: #7B68EE;
+             
+    }
+
+    Switch > .switch--track {
+    background: #7B68EE;
+    border: #7B68EE;
+    
+    }
+
+    Switch > .switch--slider {
+    color: #7B68EE;
+    background: $surface;
+    
+    }
+
+    .switch-label {
+        height: 3;
+        content-align: center middle;
+        width: auto; 
+        background:transparent;
+        color: #ffffff     
+                    
+    }
+    
+    #time-display {
+    dock: top;
+    content-align: center middle;
+    padding: 1 4;
+    }
+
+    #time-display:hover {
+    background:transparent;
+    border: round white;
+
+    }
+
+
+
+    #stop-botton {
+    display:none;
+    color: white;
+    text-style: bold;
+    background: black;
+    content-align: center middle;
+
+    }
+
+    #start-botton {
+    background: white;
+    color: #7B68EE;
+    text-style: bold;
+    content-align: center middle;
+    }
+
+    .started #start-botton {
+    display: none;
+    }
+
+    .started #stop-botton {
+    display: block;
+    }
+
+
+
+    #center_container {
+    height: 100%;
+    width: 100%;  
+    align: center middle;
+    color: $text;
+    background:$surface;       
+    }
     
     #ejemplo {
         color: white;

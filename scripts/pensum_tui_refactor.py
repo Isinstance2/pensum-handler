@@ -1,8 +1,9 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits, ListItem
+from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits, Switch
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
+from textual import on
 from textual.message import Message
 import asyncio
 from data.init_db import PensumLoaderFactory
@@ -30,12 +31,15 @@ data_folder = load_env(ENV_PATH, "DATA_FOLDER")
 
 
 class PensumApp(App):
+    enable_devtools = True  
+    BINDINGS = [("d", "toggle_devtools", "Toggle DevTools")]
     # Define the CSS for the app, importing from the config file
     CSS = CSS
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self.files = []
+        
 
     def compose(self) -> ComposeResult:
         
@@ -51,6 +55,10 @@ class PensumApp(App):
         yield Static("Ejemplo: 2028-03-04", id="ejemplo")
         yield Button("🚪 Exit", id="exit")
         
+
+    def action_toggle_devtools(self):
+        if self.devtools:
+            self.devtools.toggle()
 
     def on_button_pressed(self, event: Button.Pressed):
         if event.button.id == "unicaribe":
@@ -160,6 +168,7 @@ class UnicaribeScreen(Screen):
                     yield Static(self.summary_text, id="summary_box")
                     yield Button("✏️  Editar registro", id="edit_record", classes="start-btn")
                     yield Button("📈 Stats Report", id="stat_report", classes="start-btn")
+                    yield Button("🛑 Record classes", id="record", classes="start-btn")
 
                     
                     
@@ -178,6 +187,41 @@ class UnicaribeScreen(Screen):
             self.app.pop_screen()
         elif event.button.id == "stat_report":
             self.app.push_screen(StatReportScreen(self.file_name))
+        elif event.button.id == "record":
+            self.app.push_screen(RecordingScreen())
+
+
+
+class RecordingScreen(Screen):
+    BINDINGS = [("escape", "app.pop_screen", "Back")]
+    
+    def __init__(self):
+        super().__init__()
+
+    @on(Button.Pressed, "#start-botton")
+    def start_recording(self):
+        self.add_class("started")
+
+
+    def compose(self) -> ComposeResult:
+       
+        yield TimeDisplay("00:00:00.00", id="time-display")
+        
+        with Vertical():
+            yield Button("Start", variant="success", id="start-botton")
+            yield Button("Stop", variant="error", id="stop-botton" )
+
+        yield Footer()
+        yield Button("Save recording", id="save-recording-botton", classes="start-btn")
+        
+
+
+            
+        
+
+
+class TimeDisplay(Static):
+    """Custom time display widget"""
 
 
 class DataReady(Message):
