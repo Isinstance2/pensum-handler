@@ -18,11 +18,13 @@ from scripts.utils.configuration import get_actual_file_to_load
 from config.css_config import CSS
 from scripts.tui_display import setup_summary_box
 from scripts.tui_display import setup_table
+from scripts.tui_display import get_skill_avg
 from scripts.tui_display import grade_bar
 from tui_display import get_countdown
 from scripts.models.llama_model import AiCompanion
 from scripts.utils.configuration import load_logging
 from time import monotonic
+import plotext as plt
 load_logging()
 import logging
 
@@ -141,7 +143,6 @@ class FileSelectionScreen(Screen):
             self.app.bell()
             self.query_one(Input).placeholder = "❌ Entrada inválida. Intenta de nuevo."
 
-
 class UnicaribeScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
 
@@ -158,7 +159,7 @@ class UnicaribeScreen(Screen):
         with Horizontal():
             # Course list display
             with Vertical(id="course_list"):
-                table = DataTable(zebra_stripes=False)
+                table = DataTable(zebra_stripes=False, id="skills-table")
                 table.add_columns(
                     "Asignatura", "Clave", "Créditos", "Pre-req", "Mes cursado", "Nota", "Estado"
                 )
@@ -261,8 +262,6 @@ class RecordBar(Static):
         self.time_update.pause()  
         self.query_one("#progress", ProgressBar).update(progress=0)
         
-
-
 class RecordingScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
     
@@ -295,17 +294,7 @@ class RecordingScreen(Screen):
                 yield Button("Save recording", id="save-recording-botton", classes="save-recording") 
             
 
-        yield Footer()
-        
-        
-
-
-            
-        
-
-
-
-
+        yield Footer()      
 
 class DataReady(Message):
     def __init__(self, sender, content : str, file_name : str) -> None:
@@ -313,7 +302,6 @@ class DataReady(Message):
         self.sender = sender
         self.file_name = file_name
         super().__init__()
-
 
 class StatReportScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
@@ -324,10 +312,16 @@ class StatReportScreen(Screen):
         
 
     def compose(self) -> ComposeResult:
+        table = DataTable(zebra_stripes=False)
+        table.add_columns("skills", "%")
+
+        for cells in get_skill_avg(os.path.join(f"{data_folder}", f"{self.file_name}")):
+                table.add_row(*cells)
         
         yield Vertical(
             Static("Consultando al asistente virtual...", id="status"),
-            LoadingIndicator(id="load-in")
+            LoadingIndicator(id="load-in"),
+            table
         )
         
     async def on_mount(self):

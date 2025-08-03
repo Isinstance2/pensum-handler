@@ -36,6 +36,23 @@ if not logger.hasHandlers():
 logger.debug("🔥 Logging initialized correctamente")
 
 
+class DataStorage():
+    def __init__(self):
+        self.skills_mapping = {
+            "FGC": "General foundational courses (Theory, Basic Skills)",
+            "ADE": "Administration / Management",
+            "DMF": "Physics / Natural Sciences",
+            "QUI": "Chemistry",
+            "MTI": "Mathematics",
+            "ING": "Engineering Fundamentals",
+            "INF": "Computer Science / Programming",
+            "TIC": "Technology / IT Security",
+            "IND": "Data Science / Advanced Topics",
+            "ISW": "Software Workshops / Labs"
+        }
+
+
+
 
 class PensumLoaderUnicaribe():
     def __init__(self, file_name):

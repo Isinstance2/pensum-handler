@@ -6,6 +6,7 @@ from rich.console import Group
 from rich.panel import Panel
 from rich import box
 from datetime import datetime
+from data.init_db import DataStorage
 
 def get_avg_grade(summary):
     """Average Color Condition"""
@@ -46,9 +47,41 @@ def setup_table(df):
     return rows
 
 
+def get_skill_avg(file_name:str):
+        rows = []
+        data = pd.read_csv(file_name, index_col=None)
+        df = data.copy()
+        
+        df = df[df['nota'].notna()]
+        idx = list(range(1, len(df)+1))
+        df['m_indx'] = idx
+        data_storage = DataStorage()
+        skills_mapping = data_storage.skills_mapping
+
+        for key, category in skills_mapping.items():
+            mask = df['clave'].str.contains(key, na=False, case=False)
+            df.loc[mask, 'skills'] = category
+        skills_avg = df.groupby('skills')['nota'].mean()
+
+        for skill, avg in skills_avg.items():
+
+            style = "bold #7B68EE"
+
+            cells = [
+            Text(str(skill), style=style),
+            Text(str(avg), style=style),
+                    
+        ]   
+            rows.append(cells)
+        return rows
+            
+
+            
+
 def grade_bar(df, max_value: float = 100, width: int = 10) -> Group:
     bars = []
     df_bar = df.copy()
+    df_bar['mes_cursado'] = pd.to_datetime(df_bar['mes_cursado'], errors='coerce')
     df_bar = df_bar.sort_values(by='mes_cursado', ascending=True)  # Sort by 'mes_cursado'
     try:
         for i, (value, date_raw) in enumerate(zip(df_bar['nota'], df_bar['mes_cursado'])):
