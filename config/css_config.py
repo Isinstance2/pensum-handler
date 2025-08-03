@@ -311,6 +311,59 @@ CSS = """
     }
     
 
+    Center {
+    margin-top: 1;
+    margin-bottom: 1;
+    layout: horizontal;
+    }
+
+    Container {
+    overflow: hidden hidden;
+    height: auto;
+    }
+    
+
+    Bar > .bar--indeterminate {
+    color: white;
+    background: transparent;
+    }
+
+    Bar:hover{
+    background:transparent;
+    color:transparent;
+    }
+
+    RecordingScreen #record-bar:hover{
+    background:transparent;
+    border:white;
+
+    }
+
+    #record-bar {
+    padding:1;
+    }
+
+
+
+    Bar > .bar--bar {
+        color: #7B68EE;
+        background: transparent;
+        width:100%
+    }
+
+    Bar > .bar--complete {
+        color: $error;
+    }
+
+    PercentageStatus {
+        text-style: reverse;
+        color: $secondary;
+    }
+
+    ETAStatus {
+        text-style: underline;
+    }
+
 
 
     Select {

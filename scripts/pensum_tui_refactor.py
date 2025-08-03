@@ -1,10 +1,12 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits, Switch
+from textual.widgets import Header, Footer, Button, Static, DataTable, LoadingIndicator, Select, Digits, ProgressBar
 from textual.widgets import Input
 from textual.containers import Vertical, Horizontal, VerticalScroll
 from textual.screen import Screen
 from textual import on
 from textual.message import Message
+from textual.reactive import reactive
+from textual.containers import Center, Middle
 import asyncio
 from data.init_db import PensumLoaderFactory
 from datetime import datetime
@@ -20,9 +22,11 @@ from scripts.tui_display import grade_bar
 from tui_display import get_countdown
 from scripts.models.llama_model import AiCompanion
 from scripts.utils.configuration import load_logging
-
+from time import monotonic
 load_logging()
 import logging
+
+
 
 # Ensure the data folder exists
 ENV_PATH = '/home/oa/projects/uni/config/.env'
@@ -190,10 +194,78 @@ class UnicaribeScreen(Screen):
         elif event.button.id == "record":
             self.app.push_screen(RecordingScreen())
 
+class TimeDisplay(Static):
+    """Custom time display widget"""
+
+    start_time = monotonic()
+    time_elapsed = reactive(0)
+    
+    
+
+    def watch_time_elapsed(self):
+        time = self.time_elapsed
+        time, seconds = divmod(time, 60)
+        hours, minutes = divmod(time, 60) 
+        time_string = f"{hours:02.0f}:{minutes:02.0f}:{seconds:05.2f}"
+        self.update(time_string)
+
+    def on_mount(self):
+        self.update_timer = self.set_interval(
+            1 / 60,
+            self.update_time_elapsed,
+            pause=True
+        )
+
+    def update_time_elapsed(self):
+        self.time_elapsed = monotonic() - self.start_time
+
+    def start(self):
+        self.start_time = monotonic()
+        self.time_elapsed = 0
+        self.update_timer.resume()
+
+    def stop(self):
+        self.time_elapsed = monotonic() - self.start_time
+        self.update_timer.pause()
+
+class RecordBar(Static):
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self._last_time = 0.0
+              
+
+    def compose(self) -> ComposeResult:
+        yield ProgressBar(id="progress") 
+    
+
+    def on_mount(self):
+        
+        self.time_update = self.set_interval(1/10, self.make_progress, pause=True)
+
+
+    def make_progress(self):
+        time_display = self.screen.query_one(TimeDisplay) 
+        current_time = time_display.time_elapsed
+        if current_time > self._last_time:
+            self._last_time = current_time  # update the stored value
+            self.query_one("#progress", ProgressBar).advance(1*0.5)
+
+    def action_start(self):
+        progress_bar = self.query_one("#progress", ProgressBar)
+        progress_bar.update(total=14400, progress=0)
+        self._last_time = 0.0 
+        self.time_update.resume()
+
+    def action_stop(self):
+        self.time_update.pause()  
+        self.query_one("#progress", ProgressBar).update(progress=0)
+        
 
 
 class RecordingScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
+    
     
     def __init__(self):
         super().__init__()
@@ -201,18 +273,30 @@ class RecordingScreen(Screen):
     @on(Button.Pressed, "#start-botton")
     def start_recording(self):
         self.add_class("started")
+        self.query_one(TimeDisplay).start()
+        self.query_one(RecordBar).action_start()
+
+    @on(Button.Pressed, "#stop-botton")
+    def stop_recording(self):
+        self.remove_class("started")
+        self.query_one(TimeDisplay).stop()
+        self.query_one(RecordBar).action_stop()
 
 
     def compose(self) -> ComposeResult:
        
         yield TimeDisplay("00:00:00.00", id="time-display")
         
-        with Vertical():
-            yield Button("Start", variant="success", id="start-botton")
-            yield Button("Stop", variant="error", id="stop-botton" )
+        with Center():
+            with Middle():
+                yield Button("Start", variant="success", id="start-botton")
+                yield Button("Stop", variant="error", id="stop-botton" )
+                yield RecordBar(id="record-bar")
+                yield Button("Save recording", id="save-recording-botton", classes="save-recording") 
+            
 
         yield Footer()
-        yield Button("Save recording", id="save-recording-botton", classes="start-btn")
+        
         
 
 
@@ -220,8 +304,7 @@ class RecordingScreen(Screen):
         
 
 
-class TimeDisplay(Static):
-    """Custom time display widget"""
+
 
 
 class DataReady(Message):

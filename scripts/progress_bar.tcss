@@ -1,0 +1,18 @@
+#progress {
+    width: 60;
+    height: 3;
+    border: round yellow;
+    background: black;
+}
+
+#progress #bar {
+    background: green;
+}
+
+#progress .bar--bar {
+    background: green;
+}
+
+#progress .bar--complete {
+    background: blue;
+}
