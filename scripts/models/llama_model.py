@@ -5,6 +5,8 @@ from scripts.utils.configuration import load_env
 from scripts.utils.configuration import get_actual_file_to_load
 import sys
 import logging
+from sklearn.linear_model import LinearRegression
+
 
 log = logging.getLogger()
 log.setLevel(logging.INFO)
@@ -108,6 +110,9 @@ class AiCompanion():
             return str(self.response['message']['content'])
         except Exception as e:
             logging.error(f"Couldn't initialize AI agent : {e}")
+
+
+    
 
 
 

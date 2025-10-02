@@ -344,13 +344,7 @@ class StatReportScreen(Screen):
 
     async def on_data_ready(self, message:DataReady):
         self.query_one("#load-in").display = False
-        self.query_one("#status").update(message.content)
-
-        
-
-
-
-
+        self.query_one("#status").update(message.content)      
 
 class EditRecordScreen(Screen):
     BINDINGS = [("escape", "app.pop_screen", "Back")]
