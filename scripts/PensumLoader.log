@@ -1,0 +1,9 @@
+2025-10-02 17:22:02,936 - INFO - No date entered, using default 1995-03-04
+2025-10-02 17:22:02,943 - INFO - Countdown calculated (tuple): -31, 4, 24
+2025-10-02 17:22:08,836 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-10-02 17:22:08,842 - INFO - Countdown calculated: -31 yrs, 4 mo, 24 days
+2025-10-02 17:22:08,842 - INFO - Average grade calculated: Avg Grade: 94.58 🟢
+2025-10-02 17:22:08,842 - INFO - Summary box setup completed.
+2025-10-02 17:22:12,534 - INFO - Loaded data directly from CSV: /home/oa/projects/uni/data/PENSUM-Ingenieria-de-Datos-e-Inteligencia-Organizacional_updated.csv
+2025-10-02 17:22:38,249 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-10-02 17:22:38,249 - INFO - Agent has been initiated.
